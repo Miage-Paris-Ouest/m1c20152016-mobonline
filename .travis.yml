@@ -7,4 +7,4 @@ android:
 before_install:
  - chmod +x ./StudyAtNanterre/gradlew
 script:
-   - ./StudyAtNanterre/gradlew build ./StudyAtNanterre/connectedCheck
+   - ./StudyAtNanterre/gradlew build
