@@ -4,6 +4,7 @@ android:
     - platform-tools
     - build-tools-23.0.1
     - android-23
-
+before_install:
+ - chmod +x ./StudyAtNanterre/gradlew
 script:
    - ./StudyAtNanterre/gradlew build connectedCheck
