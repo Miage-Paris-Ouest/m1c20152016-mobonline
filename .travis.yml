@@ -8,6 +8,6 @@ before_install:
  - chmod +x ./StudyAtNanterre/gradlew
  - export ANDROID_HOME=$PWD/android-sdk-linux
  - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
-install: gradle assemble
+install: sh gradle assemble
 script: gradle check
    #- ./StudyAtNanterre/gradlew build
