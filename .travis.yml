@@ -1,23 +1,19 @@
 language: android
 android:
   components:
-    # Uncomment the lines below if you want to
-    # use the latest revision of Android SDK Tools
-    # - platform-tools
-    # - tools
+    - build-tools-19.0.3
 
-    # The BuildTools version used by your project
-    - build-tools-23.0.2
+notifications:
+  email: false
 
-    # The SDK version used to compile your project
-    - android-16
+before_install:
 
-    # Additional components
-    # - extra-google-google_play_services
-    # - extra-google-m2repository
-    # - extra-android-m2repository
-    # - addon-google_apis-google-16
+  # for gradle output style
+  - export TERM=dumb
 
-    # Specify at least one system image,
-    # if you need to run emulator(s) during your tests
-    - sys-img-armeabi-v7a-android-16
+  # environment info
+  - ./gradlew -v
+  - uname -a
+
+# Let's try to build...
+script: ./gradlew clean build
