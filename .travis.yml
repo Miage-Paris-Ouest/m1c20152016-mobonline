@@ -1,19 +1,11 @@
 language: android
 android:
   components:
-    - build-tools-19.0.3
+    # Uncomment the lines below if you want to
+    # use the latest revision of Android SDK Tools
+    # - platform-tools
+    # - tools
 
-notifications:
-  email: false
+    # The BuildTools version used by your project
+    - build-tools-23.0.2
 
-before_install:
-
-  # for gradle output style
-  - export TERM=dumb
-
-  # environment info
-  - ./gradlew -v
-  - uname -a
-
-# Let's try to build...
-script: ./gradlew clean build
