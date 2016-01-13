@@ -6,5 +6,6 @@ android:
     - android-23
 before_install:
  - chmod +x ./StudyAtNanterre/gradlew
+ - chmod +x ./home/travis/.gradle/wrapper/dists/gradle-2.4-all/3i2gobhdl0fm2tosnn15g540i0/gradle-2.4/bin/gradle
 script:
    - ./StudyAtNanterre/gradlew build connectedCheck
