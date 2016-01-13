@@ -22,4 +22,4 @@ android:
     # if you need to run emulator(s) during your tests
     - sys-img-armeabi-v7a-android-23
 
-script: ./StudyAtNanterre/gradlew connectedAndroidTest
+script: ./gradlew connectedAndroidTest
