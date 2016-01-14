@@ -1,4 +1,8 @@
 language: android
+env:
+  global:
+    - ANDROID_HOME=${TRAVIS_BUILD_DIR}/android-sdk
+    - PATH=${ANDROID_HOME}/:${ANDROID_HOME}/tools/:${ANDROID_HOME}/platform-tools/:${PATH}
 android:
   components:
     - platform-tools
@@ -7,6 +11,7 @@ android:
 before_install:
  - chmod +x ./gradlew
  - chmod +x ./gradlew.bat
+ - cp -R /usr/local/android-sdk-23.0.2 ./android-sdk
 install: gradle assemble
 script: gradle check
    #- ./StudyAtNanterre/gradlew build
