@@ -6,5 +6,5 @@ android:
     - android-23
 before_install:
  - chmod +x ./StudyAtNanterre/gradlew
-script: gradle tasks ./StudyAtNanterre/
+script: gradle build
    #- gradlew ./StudyAtNanterre/gradlew build
