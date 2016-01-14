@@ -5,6 +5,6 @@ android:
     - build-tools-23.0.1
     - android-23
 before_install:
- - chmod +x ./StudyAtNanterre/gradlew
+ - chmod +x ./gradlew
 script: gradle tasks
    #- gradlew ./StudyAtNanterre/gradlew build
