@@ -4,7 +4,15 @@ android:
     - platform-tools
     - build-tools-23.0.1
     - android-23
+	
 before_install:
- - chmod +x ./gradlew
-script: ./gradlew connectedAndroidTest
-   #- gradlew ./StudyAtNanterre/gradlew build
+
+  # for gradle output style
+  - export TERM=dumb
+
+  # environment info
+  - ./gradlew -v
+  - uname -a
+
+# Let's try to build...
+script: ./gradlew clean build
