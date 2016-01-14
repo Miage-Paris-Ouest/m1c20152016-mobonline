@@ -12,7 +12,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Spam me"
+        android:text="Spam me 2"
         android:id="@+id/button"
         android:layout_below="@+id/hello"
         android:layout_alignParentLeft="true"
