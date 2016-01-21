@@ -1,0 +1,39 @@
+@startuml
+
+NanterreUniversityAdmin -> Site_Admin: Connection
+activate Site_Admin
+
+
+Site_Admin -> BDD: Authentication Request
+activate BDD
+
+alt successful
+
+    BDD -> Site_Admin: Authentication Accepted
+    Site_Admin->NanterreUniversityAdmin : Show news
+
+        alt Edit news
+            NanterreUniversityAdmin -> Site_Admin: Edit news
+
+        else Edit POI on the map of the campus
+            NanterreUniversityAdmin -> Site_Admin: Edit POI on the map of the campus
+
+        else Add student
+             NanterreUniversityAdmin -> Site_Admin: Add student
+
+        else Manage student
+                      NanterreUniversityAdmin -> Site_Admin: Manage student
+
+        
+
+
+        end
+
+else failure
+
+    BDD -> Site_Admin: Authentication Failure
+    Site_Admin->NanterreUniversityAdmin : Repeat connection
+end
+
+
+@enduml
