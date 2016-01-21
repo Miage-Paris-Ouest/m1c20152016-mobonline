@@ -5,7 +5,7 @@ left to right direction
 skinparam packageStyle rect
 
  :Student: as User
- :University: as Univ
+ :University Admin: as Univ
  :Nanterre University\nAdmin: as Admin
 
  Univ<-Admin

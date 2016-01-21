@@ -1,6 +1,6 @@
 @startuml
 
-NanterreUniversityAdmin -> Site_Admin: Connection
+UniversityAdmin -> Site_Admin: Connection
 activate Site_Admin
 
 
@@ -10,40 +10,35 @@ activate BDD
 alt successful
 
     BDD -> Site_Admin: Authentication Accepted
-    Site_Admin->NanterreUniversityAdmin : Show news
+    Site_Admin->UniversityAdmin : Show news
 
         alt Add/Edit news
-            NanterreUniversityAdmin -> Site_Admin: Add/Edit news
+            UniversityAdmin -> Site_Admin: Add/Edit news
 
         else Add/Edit POI on the map of the campus
-            NanterreUniversityAdmin -> Site_Admin: Add/Edit POI on the map of the campus
+            UniversityAdmin -> Site_Admin: Add/Edit POI on the map of the campus
 
         else Add student
-             NanterreUniversityAdmin -> Site_Admin: Add student
+             UniversityAdmin -> Site_Admin: Add student
 
         else Manage student
-             NanterreUniversityAdmin -> Site_Admin: Manage student
+             UniversityAdmin -> Site_Admin: Manage student
 
         else Manage How To ?
-             NanterreUniversityAdmin -> Site_Admin: Manage How To ?
+             UniversityAdmin -> Site_Admin: Manage How To ?
 
         else Add/Edit language words
-            NanterreUniversityAdmin -> Site_Admin: Add/Edit language words
+             UniversityAdmin -> Site_Admin: Add/Edit language words
 
         else Add/Edit administrative contacts
-             NanterreUniversityAdmin -> Site_Admin: Add/Edit administrative contacts
+             UniversityAdmin -> Site_Admin: Add/Edit administrative contacts
 
-        else Add University
-             NanterreUniversityAdmin -> Site_Admin: Add University
-
-        else Manage Universities
-             NanterreUniversityAdmin -> Site_Admin: Manage Universities
         end
 
 else failure
 
     BDD -> Site_Admin: Authentication Failure
-    Site_Admin->NanterreUniversityAdmin : Repeat Connection
+    Site_Admin->UniversityAdmin : Repeat Connection
 end
 
 
