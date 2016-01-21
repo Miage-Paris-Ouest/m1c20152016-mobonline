@@ -3,6 +3,7 @@
 .gradle
 /local.properties
 build/
+/build/intermediates/gradle_project_sync_data.bin
 
 # Idea
 
