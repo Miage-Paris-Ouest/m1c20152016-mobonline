@@ -5,10 +5,10 @@ left to right direction
 skinparam packageStyle rect
 
  :Student: as User
- :University: as Partner
+ :University: as Univ
  :Nanterre University\nAdmin: as Admin
 
- Partner<-Admin
+ Univ<-Admin
 
 rectangle Nanterasmus{
 
@@ -17,20 +17,21 @@ rectangle Nanterasmus{
   User -- (Manage TODO List)
   User -- (Contact)
   User -- (Learning local culture)
-  User -- (Consult a Plan of the campus)
+  User -- (Consult a Map of the campus)
   User -- (Learning language)
 
-  Partner -- (Add/Edit News)
-  Partner -- (Add Student)
-  Partner -- (Manage Student)
-  Partner -- (Manage "How To ?" Part)
-  Partner -- (Add/Edit language words)
-  Partner -- (Add/Edit administrative contacts)
+  Univ -- (Add/Edit News)
+  Univ -- (Add/Edit POI on the map of the campuis)
+  Univ -- (Add Student)
+  Univ -- (Manage Student)
+  Univ -- (Manage "How To ?" Part)
+  Univ -- (Add/Edit language words)
+  Univ -- (Add/Edit administrative contacts)
   (Add Student) <. (Manage Student) : extends
 
-  Admin -- (Add Partner)
-  Admin -- (Manage Partner)
-  (Manage Partner) .> (Add Partner) : extends
+  Admin -- (Add University)
+  Admin -- (Manage Universities)
+  (Add University) <. (Manage Universities) : extends
 
 
 }
