@@ -1,20 +1,39 @@
 @startuml
-:Main Admin: as Admin
-(Use the application) as (Use)
 
-User -> (Start)
-User --> (Use)
+left to right direction
 
-Admin ---> (Use)
+skinparam packageStyle rect
 
-note right of Admin : This is an example.
+ :Student: as User
+ :University: as Univ
+ :Nanterre University\nAdmin: as Admin
 
-note right of (Use)
-A note can also
-be on several lines
-end note
+ Univ<-Admin
 
-note "This note is connected\nto several objects." as N2
-(Start) .. N2
-N2 .. (Use)
+rectangle Nanterasmus{
+
+  User -- (Consult News)
+  User -- (How to ?)
+  User -- (Manage TODO List)
+  User -- (Contact)
+  User -- (Learning local culture)
+  User -- (Consult a Map of the campus)
+  User -- (Learning language)
+
+  Univ -- (Add/Edit News)
+  Univ -- (Add/Edit POI on the map of the campuis)
+  Univ -- (Add Student)
+  Univ -- (Manage Student)
+  Univ -- (Manage "How To ?" Part)
+  Univ -- (Add/Edit language words)
+  Univ -- (Add/Edit administrative contacts)
+  (Add Student) <. (Manage Student) : extends
+
+  Admin -- (Add University)
+  Admin -- (Manage Universities)
+  (Add University) <. (Manage Universities) : extends
+
+
+}
+
 @enduml
