@@ -6,7 +6,7 @@
 Dépôt de Bruno Varaldi, Adrien Dos Santos, Florian Roy
 
 
-Présentation Générale du projet
+<h1>Présentation Générale du projet</h1>
 
 Introduction
 Besoin et Contexte
