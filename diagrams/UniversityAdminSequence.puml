@@ -28,11 +28,16 @@ alt successful
              NanterreUniversityAdmin -> Site_Admin: Manage How To ?
 
         else Add/Edit language words
-             NanterreUniversityAdmin -> Site_Admin: Add/Edit language words
+            NanterreUniversityAdmin -> Site_Admin: Add/Edit language words
 
         else Add/Edit administrative contacts
              NanterreUniversityAdmin -> Site_Admin: Add/Edit administrative contacts
 
+        else Add University
+             NanterreUniversityAdmin -> Site_Admin: Add University
+
+        else Manage Universities
+             NanterreUniversityAdmin -> Site_Admin: Manage Universities
         end
 
 else failure
