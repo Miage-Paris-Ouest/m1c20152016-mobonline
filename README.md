@@ -6,68 +6,67 @@
 Dépôt de Bruno Varaldi, Adrien Dos Santos, Florian Roy
 
 
-<h1>Présentation Générale du projet</h1>
+# Présentation Générale du projet
 
-Introduction
-Besoin et Contexte
+# Introduction
 
-Besoin : 
+## Besoin : 
 Mettre à disposition des étudiants d’échanges  erasmus de Nanterre une application leur “facilitant la vie “ tant du point de vue administratif que dans leur vie courante.
 
 
-Contexte :
+## Contexte :
 Une  application Wherasmus à été développé par les étudiants d’Ankara, la personne en charge du SRI (Service des Relations Internationnales) a demandé le développement d’une application similaire à l’université de  Paris Ouest Nanterre la défense.
 
 
-Cibles
+## Cibles
 Les personnes concernés par l’application seront les étudiants possédant un smartphone android:
 de Nanterre partant en Erasmus dans une université partenaire.
 d’une université partenaire venant en Erasmus à Nanterre. 
 
 
-Les spécifications fonctionnelles
+# Les spécifications fonctionnelles
 Les étudiants utilisent une application android et les administrateurs un portail WEB.
 
-L’application proposera les fonctionnalités suivantes:
-Pour les étudiants :
-La connexion (possibilité de se connecter via un login et mot de passe)
-La déconnexion
-La configuration du profil
-consulter les News de l’université
-consulter le plan de l’université
-Se renseigner sur les moyens de transport, d’hébergement et restauration
-Se renseigner sur les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université
-l’apprentissage de la langue locale
-la liste des choses à faire (To Do List)
-la consultation de la liste de contact et l’envoi de messages
-La possibilité de se renseigner sur la culture et la activités culturelles
+## L’application proposera les fonctionnalités suivantes:
+### Pour les étudiants :
+* La connexion (possibilité de se connecter via un login et mot de passe)
+* La déconnexion
+* La configuration du profil
+* consulter les News de l’université
+* consulter le plan de l’université
+* Se renseigner sur les moyens de transport, d’hébergement et restauration
+* Se renseigner sur les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université
+* l’apprentissage de la langue locale
+* la liste des choses à faire (To Do List)
+* la consultation de la liste de contact et l’envoi de messages
+* La possibilité de se renseigner sur la culture et la activités culturelles
 
-Pour les administrateurs de Nanterre et les universités partenaires :
-éditer les News
-inscription des étudiants d’échange
-gérer ses étudiants
-modifier les rubriques dans “How to ?”
-changer les contacts administratifs
-ajouter des mots dans learning french
-Pour les administrateurs de Nanterre uniquement :
-ajout de nouveau partenaires (université)
-gérer les partenaires (université)
-
-
-
-Les spécifications Techniques:
+### Pour les administrateurs de Nanterre et les universités partenaires :
+* éditer les News
+* inscription des étudiants d’échange
+* gérer ses étudiants
+* modifier les rubriques dans “How to ?”
+* changer les contacts administratifs
+* ajouter des mots dans learning french
+* Pour les administrateurs de Nanterre uniquement :
+* ajout de nouveau partenaires (université)
+* gérer les partenaires (université)
 
 
-Environnement de développement:
-Utilisation du JAVA pour le développement de l’application sous android.
-Utilisation de PHP pour le serveur et la partie administration
+
+## Les spécifications Techniques:
+
+
+### Environnement de développement:
+* Utilisation du JAVA pour le développement de l’application sous android.
+* Utilisation de PHP pour le serveur et la partie administration
 
 l’implémentation des différentes fonctionnalité se fera par la création d’activités. Ces activités récolterons les informations en base via des requêtes HTTP (via une API de type REST).
 
-Outils Used + 
+### Outils Used + 
 UML : 
-Diagramme de classes
-Diagramme technique
+* Diagramme de classes
+* Diagramme technique
 
 diagramme package
 diagramme classe
