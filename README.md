@@ -65,6 +65,10 @@ l’implémentation des différentes fonctionnalité se fera par la création d�
 
 ### Outils Used + 
 UML : 
+* Diagramme de cas d'utlisation
+[logo]: https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase.png "Use case"
+
+* Diagramme de classe
 * Diagramme de classes
 * Diagramme technique
 
