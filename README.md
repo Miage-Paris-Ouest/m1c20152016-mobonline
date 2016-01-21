@@ -71,6 +71,7 @@ UML :
 ![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase.png "Use case")
 * Diagramme de séquences
 
+|StudentSequence|NanterreUniversityAdmin|UniversityAdmin|
 |![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/StudentSequence.png "StudentSequence")|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/NanterreUniversityAdmin.png "NanterreUniversityAdmin")|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UniversityAdmin.png "UniversityAdmin")|
 |:---|:---:|---:|
 
