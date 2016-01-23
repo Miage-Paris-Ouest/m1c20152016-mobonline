@@ -31,20 +31,39 @@ Les étudiants utilisent une application android et les administrateurs un porta
 ### Pour les étudiants :
 * La connexion (possibilité de se connecter via un login et mot de passe)
 
-![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/accueil.png)
+![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/login.png)
 
 * La déconnexion
-
-
 * La configuration du profil
 * consulter les News de l’université
+
+![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/accueil.png)
+
 * consulter le plan de l’université
-* Se renseigner sur les moyens de transport, d’hébergement et restauration
-* Se renseigner sur les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université
+
+![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/map.png)
+
+* Se renseigner sur les moyens de transport, d’hébergement, restaurationles ainsi que les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université
+
+![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/how%20to.png)
+![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/how%20to%202.png)
+ 
 * l’apprentissage de la langue locale
+
+![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/learning%20french.png)
+
 * la liste des choses à faire (To Do List)
+
+![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/to%20do%20list.png)
+
 * la consultation de la liste de contact et l’envoi de messages
+
+![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/contact.png)
+
 * La possibilité de se renseigner sur la culture et la activités culturelles
+
+![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/culture.png)
+
 
 ### Pour les administrateurs de Nanterre et les universités partenaires :
 * éditer les News
