@@ -92,10 +92,10 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 </TR> 
 <TR> 
  <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/how%20to.png" alt="page How To ?" />
+ <center><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/how%20to.png" alt="page How To ?" /></center>
  </TD> 
  <TD>
-  <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/how%20to%202.png" alt="page How To ?" />
+ <center><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/how%20to%202.png" alt="page How To ?" /></center>
  </TD> 
  </TR>
  <TR>
@@ -128,10 +128,10 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
   <TH  colspan=2> La page To Do List </TH> 
 </TR> 
 <TR> 
- <TD>
+ <TD style="width:50%;">
  <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/to%20do%20list.png" alt="page To Do List" />
  </TD> 
- <TD > Fonctionnalités : </br>
+ <TD style="width:50%;"> Fonctionnalités : </br>
  <ul>
 <li>Consultation des activités à effectuer</li>
 <li>Valider une activité</li>
@@ -147,10 +147,10 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
   <TH  colspan=2> La page Contact </TH> 
 </TR> 
 <TR> 
- <TD>
+ <TD style="width:50%;">
  <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/contact.png" alt="page Contact" />
  </TD> 
- <TD > Fonctionnalités : </br>
+ <TD style="width:50%;"> Fonctionnalités : </br>
  <ul>
 <li>Consultation de la liste de contacts</li>
 <li>Envoyer de messages</li>
@@ -167,7 +167,7 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
  <TD>
  <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/culture.png" alt="page Culture" />
  </TD> 
- <TD > Fonctionnalités : </br>
+ <TD> Fonctionnalités : </br>
  <ul>
 <li>Consultation des activités culturelles proposées</li>
 <li>Affichage par catégorie</li>
