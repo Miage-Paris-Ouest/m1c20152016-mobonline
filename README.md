@@ -43,7 +43,7 @@ Les étudiants utilisent une application android et les administrateurs un porta
 
 ![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/map.png)
 
-* Se renseigner sur les moyens de transport, d’hébergement, restaurationles ainsi que les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université
+* Se renseigner sur les moyens de transport, d’hébergement, restauration les ainsi que les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université
 
 ![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/how%20to.png)
 ![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/how%20to%202.png)
