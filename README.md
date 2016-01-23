@@ -30,7 +30,12 @@ Les étudiants utilisent une application android et les administrateurs un porta
 ## L’application proposera les fonctionnalités suivantes:
 ### Pour les étudiants :
 * La connexion (possibilité de se connecter via un login et mot de passe)
+
+https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline.git/GUI/img/accueil.png
+
 * La déconnexion
+
+
 * La configuration du profil
 * consulter les News de l’université
 * consulter le plan de l’université
