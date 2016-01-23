@@ -112,7 +112,7 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
   <TH  colspan=2> La page Learn French </TH> 
 </TR> 
 <TR> 
- <TD style="width:50%;>
+ <TD style="width:50%;">
  <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/learning%20french.png" alt="page Learn French ?" />
  </TD> 
  <TD style="width:50%;> Fonctionnalités : </br>
@@ -159,7 +159,7 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 </TR> 
 </TABLE>
 
- <TABLE BORDER="1"> 
+ <TABLE BORDER="1" style="width:100%;"> 
 <TR> 
   <TH  colspan=2> La page Culture </TH> 
 </TR> 
