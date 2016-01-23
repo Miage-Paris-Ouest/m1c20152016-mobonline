@@ -107,15 +107,15 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 </TR> 
 </TABLE>
 
-<TABLE BORDER="1"> 
+<TABLE style="width:100%;" BORDER="1"> 
 <TR> 
   <TH  colspan=2> La page Learn French </TH> 
 </TR> 
 <TR> 
- <TD>
+ <TD style="width:50%;>
  <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/learning%20french.png" alt="page Learn French ?" />
  </TD> 
- <TD > Fonctionnalités : </br>
+ <TD style="width:50%;> Fonctionnalités : </br>
  <ul>
 <li>l’apprentissage de la langue locale</li>
  </ul>
@@ -123,7 +123,7 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 </TR> 
 </TABLE>
  
- <TABLE BORDER="1"> 
+ <TABLE style="width:100%;" BORDER="1"> 
 <TR> 
   <TH  colspan=2> La page To Do List </TH> 
 </TR> 
@@ -142,7 +142,7 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 </TR> 
 </TABLE>
 
- <TABLE BORDER="1"> 
+ <TABLE style="width:100%;" BORDER="1"> 
 <TR> 
   <TH  colspan=2> La page Contact </TH> 
 </TR> 
