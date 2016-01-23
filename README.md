@@ -99,6 +99,7 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
  <TD> Fonctionnalités : </br>
  <ul>
 <li>Consultation des activités à effectuer</li>
+Une liste d'activités est proposée de base à l'étudiant erasmus afin de lui premettre de s'intégrer plus facilement.
 <li>Valider une activité</li>
 <li>Supprimer une activité</li>
 <li>Ajouter une activité</li>
@@ -156,8 +157,9 @@ Un clic sur une catégorie fait apparaitre les différentes activités liés à 
  <TD> Fonctionnalités : </br>
  <ul>
 <li>Consultation de la liste de contacts</li>
+Un clic sur l'une des catégories (par exemple : inscription) fait apparaitre les différents contacts de la catégorie.
 <li>Envoyer de messages</li>
-                                                                                                                   
+Un clic sur un contact fait apparaitre une fenêtre permettant l'envoi de mail.
  </ul>
  </TD> 
 </TR> 
@@ -176,6 +178,7 @@ Un clic sur une catégorie fait apparaitre les différentes activités liés à 
  <TD> Fonctionnalités : </br>
  <ul>
 <li>l’apprentissage de la langue locale</li>
+Dans cette page il y aura les différents mots clés et phrases courantes de la langue française traduites dans la langue de l'utilisateur.
                                                                                                                    
  </ul>
  </TD> 
