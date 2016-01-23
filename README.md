@@ -97,6 +97,8 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
  <TD>
   <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/how%20to%202.png" alt="page How To ?" />
  </TD> 
+ </TR>
+ <TR>
  <TD colspan=2> Fonctionnalités : </br>
  <ul>
 <li>Se renseigner sur les moyens de transport, d’hébergement, restauration les ainsi que les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université</li>
