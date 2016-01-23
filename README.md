@@ -69,25 +69,6 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 
 <TABLE BORDER="1"> 
 <TR> 
-  <TH  colspan=2> La page Map </TH> 
-</TR> 
-<TR> 
- <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/map.png" alt="page map" />
- </TD> 
- <TD> Fonctionnalités : </br>
- <ul>
-<li>Consulter le plan de l’université</li>
-<li>Affichage du menu latéral en drop-right en cliquant sur le bouton loupe</li>
-<li>Localisation des différents endroits en fonction de la selection du menu latéral à l'aide des puces de localisation</li>
-<li>Un clic sur une puce sur le plan affiche l'image et la description du lieu en bas de l'interface</li>
- </ul>
- </TD> 
-</TR> 
-</TABLE>
-
-<TABLE BORDER="1"> 
-<TR> 
   <TH  colspan=2> La page How To ? </TH> 
 </TR> 
 <TR> 
@@ -107,23 +88,7 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 </TR> 
 </TABLE>
 
-<TABLE style="width:100%;" BORDER="1"> 
-<TR> 
-  <TH  colspan=2> La page Learn French </TH> 
-</TR> 
-<TR> 
- <TD">
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/learning%20french.png" alt="page Learn French ?" />
- </TD> 
- <TD> Fonctionnalités : </br>
- <ul>
-<li>l’apprentissage de la langue locale</li>
- </ul>
- </TD> 
-</TR> 
-</TABLE>
- 
- <TABLE style="width:100%;" BORDER="1"> 
+ <TABLE BORDER="1"> 
 <TR> 
   <TH  colspan=2> La page To Do List </TH> 
 </TR> 
@@ -137,29 +102,13 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 <li>Valider une activité</li>
 <li>Supprimer une activité</li>
 <li>Ajouter une activité</li>
+                                                                                                                   
  </ul>
  </TD> 
 </TR> 
 </TABLE>
 
- <TABLE style="width:100%;" BORDER="1"> 
-<TR> 
-  <TH  colspan=2> La page Contact </TH> 
-</TR> 
-<TR> 
- <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/contact.png" alt="page Contact" />
- </TD> 
- <TD> Fonctionnalités : </br>
- <ul>
-<li>Consultation de la liste de contacts</li>
-<li>Envoyer de messages</li>
- </ul>
- </TD> 
-</TR> 
-</TABLE>
-
- <TABLE style="width:100%;" BORDER="1"> 
+ <TABLE BORDER="1"> 
 <TR> 
   <TH  colspan=2> La page Culture </TH> 
 </TR> 
@@ -172,6 +121,62 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 <li>Consultation des activités culturelles proposées</li>
 <li>Affichage par catégorie</li>
 Un clic sur une catégorie fait apparaitre les différentes activités liés à la catégorie avec un effet drop-down.
+ </ul>
+ </TD> 
+</TR> 
+</TABLE>
+
+<TABLE BORDER="1"> 
+<TR> 
+  <TH  colspan=2> La page Map </TH> 
+</TR> 
+<TR> 
+ <TD>
+ <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/map.png" alt="page map" />
+ </TD> 
+ <TD> Fonctionnalités : </br>
+ <ul>
+<li>Consulter le plan de l’université</li>
+<li>Affichage du menu latéral en drop-right en cliquant sur le bouton loupe</li>
+<li>Localisation des différents endroits en fonction de la selection du menu latéral à l'aide des puces de localisation</li>
+<li>Un clic sur une puce sur le plan affiche l'image et la description du lieu en bas de l'interface</li>
+ </ul>
+ </TD> 
+</TR> 
+</TABLE>
+
+ <TABLE BORDER="1"> 
+<TR> 
+  <TH  colspan=2> La page Contact </TH> 
+</TR> 
+<TR> 
+ <TD>
+ <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/contact.png" alt="page Contact" />
+ </TD> 
+ <TD> Fonctionnalités : </br>
+ <ul>
+<li>Consultation de la liste de contacts</li>
+<li>Envoyer de messages</li>
+                                                                                                                   
+ </ul>
+ </TD> 
+</TR> 
+</TABLE>
+
+
+
+<TABLE BORDER="1"> 
+<TR> 
+  <TH  colspan=2> La page Learn French </TH> 
+</TR> 
+<TR> 
+ <TD>
+ <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/learning%20french.png" alt="page Learn French ?" />
+ </TD> 
+ <TD> Fonctionnalités : </br>
+ <ul>
+<li>l’apprentissage de la langue locale</li>
+                                                                                                                   
  </ul>
  </TD> 
 </TR> 
