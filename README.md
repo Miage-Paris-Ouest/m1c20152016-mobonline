@@ -112,10 +112,10 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
   <TH  colspan=2> La page Learn French </TH> 
 </TR> 
 <TR> 
- <TD style="width:50%;">
+ <TD">
  <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/learning%20french.png" alt="page Learn French ?" />
  </TD> 
- <TD style="width:50%;> Fonctionnalités : </br>
+ <TD> Fonctionnalités : </br>
  <ul>
 <li>l’apprentissage de la langue locale</li>
  </ul>
@@ -128,10 +128,10 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
   <TH  colspan=2> La page To Do List </TH> 
 </TR> 
 <TR> 
- <TD style="width:50%;">
+ <TD>
  <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/to%20do%20list.png" alt="page To Do List" />
  </TD> 
- <TD style="width:50%;"> Fonctionnalités : </br>
+ <TD> Fonctionnalités : </br>
  <ul>
 <li>Consultation des activités à effectuer</li>
 <li>Valider une activité</li>
@@ -147,10 +147,10 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
   <TH  colspan=2> La page Contact </TH> 
 </TR> 
 <TR> 
- <TD style="width:50%;">
+ <TD>
  <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/contact.png" alt="page Contact" />
  </TD> 
- <TD style="width:50%;"> Fonctionnalités : </br>
+ <TD> Fonctionnalités : </br>
  <ul>
 <li>Consultation de la liste de contacts</li>
 <li>Envoyer de messages</li>
@@ -159,7 +159,7 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 </TR> 
 </TABLE>
 
- <TABLE BORDER="1" style="width:100%;"> 
+ <TABLE style="width:100%;" BORDER="1"> 
 <TR> 
   <TH  colspan=2> La page Culture </TH> 
 </TR> 
