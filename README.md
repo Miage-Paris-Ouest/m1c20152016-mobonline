@@ -34,12 +34,16 @@ Les étudiants utilisent une application android et les administrateurs un porta
   <TH  colspan=2> La page de connexion </TH> 
 </TR> 
 <TR> 
- <TD>![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/login.png)</TD> 
+ <TD>
+ <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/login.png" alt="page de connexion" />
+ </TD> 
  <TD> Fonctionnalités : </br>
-* La connexion (possibilité de se connecter via un login et mot de passe)
-* La déconnexion
-* La configuration du profil
-* consulter les News de l’université
+ <ul>
+<li>La connexion (possibilité de se connecter via un login et mot de passe)</li>
+<li>La déconnexion</li>
+<li>La configuration du profil</li>
+<li>consulter les News de l’université</li>
+ </ul>
  </TD> 
 </TR> 
 </TABLE> 
