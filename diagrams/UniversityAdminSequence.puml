@@ -10,7 +10,7 @@ activate BDD
 alt successful
 
     BDD -> Site_Admin: Authentication Accepted
-    Site_Admin->UniversityAdmin : Show news
+
 
         alt Add/Edit news
             UniversityAdmin -> Site_Admin: Add/Edit news

@@ -10,7 +10,6 @@ activate BDD
 alt successful
 
     BDD -> Site_Admin: Authentication Accepted
-    Site_Admin->NanterreUniversityAdmin : Show news
 
         alt Add/Edit news
             NanterreUniversityAdmin -> Site_Admin: Add/Edit news

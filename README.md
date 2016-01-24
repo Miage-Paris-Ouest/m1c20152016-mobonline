@@ -193,7 +193,8 @@ Dans cette page il y aura les différents mots clés et phrases courantes de la 
 * modifier les rubriques dans “How to ?”
 * changer les contacts administratifs
 * ajouter des mots dans learning french
-* Pour les administrateurs de Nanterre uniquement :
+
+### Pour les administrateurs de Nanterre uniquement :
 * ajout de nouveau partenaires (université)
 * gérer les partenaires (université)
 
