@@ -84,9 +84,6 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
   <TH  colspan=2> La page To Do List </TH> 
 </TR> 
 <TR> 
- <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/to%20do%20list.png" alt="page To Do List" />
- </TD> 
  <TD> Fonctionnalités : </br>
  <ul>
 <li>Consultation des activités à effectuer</li>
@@ -177,20 +174,6 @@ Dans cette page il y aura les différents mots clés et phrases courantes de la 
 * ajout de nouveau partenaires (université)
 * gérer les partenaires (université)
 
-
-
-## Les spécifications Techniques:
-
-
-### Environnement de développement:
-* Utilisation du JAVA pour le développement de l’application sous android.
-* Utilisation de PHP pour le serveur et la partie administration
-
-l’implémentation des différentes fonctionnalité se fera par la création d’activités. Ces activités récolterons les informations en base via des requêtes HTTP (via une API de type REST).
-
-### Outils Used + 
-UML : 
-* Diagramme de cas d'utlisation
 
 |UseCase|
 |:---:|
