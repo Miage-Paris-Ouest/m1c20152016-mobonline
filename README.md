@@ -225,6 +225,5 @@ UML :
 
 
 * Diagramme de classe
-* Diagramme de classes
 * Diagramme technique
 
