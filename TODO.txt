@@ -1,10 +1,16 @@
-Readme.md : On va faire du mobile
+./Readme.md : On va faire du mobile
 - Conception : Présentation Sujet, Description fonctionnalités.
 - Manuel d'utilisation, à faire : Cahier de TESTS.
 - Preuve utilisation outils
 ---------------------------------------------------------------------
-Protoype.md:
+PROTOTYPE/readme.md:
 ---------------------------------------------------------------------
-Contraintes Techniques - Langages ... 
+TECHNIQUE/readme.md
+- Sticker Travis, Biterise
+- Contraintes Techniques - Langages ... 
 - Modélisation des données
 - Architecture (Diagramme de Classes)
+---------------------------------------------------------------------
+Tests Unitaires
+---------------------------------------------------------------------
+Code
