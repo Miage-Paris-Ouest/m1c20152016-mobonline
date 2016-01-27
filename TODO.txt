@@ -1,0 +1,10 @@
+Readme.md : On va faire du mobile
+- Conception : Présentation Sujet, Description fonctionnalités.
+- Manuel d'utilisation, à faire : Cahier de TESTS.
+- Preuve utilisation outils
+---------------------------------------------------------------------
+Protoype.md:
+---------------------------------------------------------------------
+Contraintes Techniques - Langages ... 
+- Modélisation des données
+- Architecture (Diagramme de Classes)
