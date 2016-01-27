@@ -1,5 +1,6 @@
 # Prototype :
 
+Ci dessous le prototype prévisionnel de notre application.
 
 |La page de connexion|
 |:---:|

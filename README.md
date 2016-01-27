@@ -174,6 +174,7 @@ Dans cette page il y aura les différents mots clés et phrases courantes de la 
 * ajout de nouveau partenaires (université)
 * gérer les partenaires (université)
 
+# Les diagrammes
 
 |UseCase|
 |:---:|
