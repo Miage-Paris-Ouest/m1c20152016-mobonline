@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+
+skinparam folder{
+
+	BorderColor none
+
+}
+
+skinparam shadowing false
+
+  :Student: as User
+
+rectangle Nanterasmus {
+folder {
+
+
+
+  User -- (Consult News)
+  User -- (How to ?)
+  User -- (Manage TODO List)
+  User -- (Contact)
+  User -- (Learning local culture)
+  User -- (Consult a Map of the campus)
+  User -- (Learning language)
+}
+  (Consult News) <. (Authentification) : include
+  (How to ?) <. (Authentification) : include
+  (Manage TODO List) <. (Authentification) : include
+  (Contact) <. (Authentification) : include
+  (Learning local culture) <. (Authentification) : include
+  (Consult a Map of the campus) <. (Authentification) : include
+  (Learning language) <. (Authentification) : include
+
+
+
+}
+
+@enduml

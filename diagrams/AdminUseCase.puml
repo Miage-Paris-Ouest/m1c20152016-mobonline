@@ -1,0 +1,52 @@
+@startuml
+
+left to right direction
+
+skinparam folder{
+
+	BorderColor none
+
+}
+
+skinparam shadowing false
+
+ :University Admin: as Univ
+ :Nanterre University\nAdmin: as Admin
+
+ Univ<-Admin
+
+rectangle Nanterasmus {
+folder {
+
+  Univ -- (Add/Edit News)
+  Univ -- (Add/Edit POI on the map of the campus)
+  Univ -- (Add Student)
+  Univ -- (Manage Student)
+  Univ -- (Manage "How To ?" Part)
+  Univ -- (Add/Edit language words)
+  Univ -- (Add/Edit administrative contacts)
+  (Add Student) <. (Manage Student) : extends
+
+
+  Admin -- (Add University)
+  Admin -- (Manage Universities)
+
+ (Add University) <. (Manage Universities) : extends
+
+
+}
+
+     (Add/Edit News) <. (AuthentificationWebPage) : include
+     (Add/Edit POI on the map of the campus) <. (AuthentificationWebPage) : include
+     (Add Student) <. (AuthentificationWebPage) : include
+     (Manage Student) <. (AuthentificationWebPage) : include
+     (Manage "How To ?" Part) <. (AuthentificationWebPage) : include
+     (Add/Edit language words) <. (AuthentificationWebPage) : include
+     (Add/Edit administrative contacts) <. (AuthentificationWebPage) : include
+
+       (Add University) <. (AuthentificationWebPage) : include
+       (Manage Universities) <. (AuthentificationWebPage) : include
+
+}
+
+@enduml
