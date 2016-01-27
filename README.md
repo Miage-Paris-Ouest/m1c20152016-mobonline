@@ -33,79 +33,70 @@ Les étudiants utilisent une application android et les administrateurs un porta
 
 |La page de connexion|
 |:---:|
-|**Fonctionnalités :**|
-||
-|* La connexion (possibilité de se connecter via un login et mot de passe)|
-|* La déconnexion|
-|* La configuration du profil|
-|* consulter les News de l’université|
+|**Fonctionnalités :**
+* La connexion (possibilité de se connecter via un login et mot de passe)
+* La déconnexion
+* La configuration du profil
+* consulter les News de l’université|
 
 
 |La page d'accueil|
 |:---:|
-|**Fonctionnalités :**|
-||
-|* Les News du bandeau défilant|
-|Un clic sur une news permet l'affichage détaillé de cette news.|
-|* Le bloc des 6 boutons principaux|
-|Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie|
+|**Fonctionnalités :**
+* Les News du bandeau défilant
+Un clic sur une news permet l'affichage détaillé de cette news.
+* Le bloc des 6 boutons principaux
+Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie|
 
 |La page How To ?|
 |:---:|
-|**Fonctionnalités :**|
-||
-|*Se renseigner sur les moyens de transport, d’hébergement, restauration les ainsi que les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université|
+|**Fonctionnalités :**
+*Se renseigner sur les moyens de transport, d’hébergement, restauration les ainsi que les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université|
 
 
 |La page To Do List|
 |:---:|
-|**Fonctionnalités**|
-||
-|*Consultation des activités à effectuer|
-|Une liste d'activités est proposée de base à l'étudiant erasmus afin de lui premettre de s'intégrer plus facilement.|
-|*Valider une activité|
-|*Supprimer une activité|
-|*Ajouter une activité|
+|**Fonctionnalités**
+*Consultation des activités à effectuer
+Une liste d'activités est proposée de base à l'étudiant erasmus afin de lui premettre de s'intégrer plus facilement.
+*Valider une activité
+*Supprimer une activité
+*Ajouter une activité|
 
 
 |La page Culture|
 |:---:|
-|**Fonctionnalités :**|
-||
-|*Consultation des activités culturelles proposées|
-|*Affichage par catégorie|
-|Un clic sur une catégorie fait apparaitre les différentes activités liés à la catégorie avec un effet drop-down.|
+|**Fonctionnalités :**
+*Consultation des activités culturelles proposées
+*Affichage par catégorie
+Un clic sur une catégorie fait apparaitre les différentes activités liés à la catégorie avec un effet drop-down.|
 
 
 |La page Map|
 |:---:|
-|**Fonctionnalités :**|
-||
-|*Consulter le plan de l’université|
-|*Affichage du menu latéral en drop-right en cliquant sur le bouton loupe|
-|*Localisation des différents endroits en fonction de la selection du menu latéral à l'aide des puces de localisation|
-|*Un clic sur une puce sur le plan affiche l'image et la description du lieu en bas de l'interface|
+|**Fonctionnalités :**
+*Consulter le plan de l’université
+*Affichage du menu latéral en drop-right en cliquant sur le bouton loupe
+*Localisation des différents endroits en fonction de la selection du menu latéral à l'aide des puces de localisation
+*Un clic sur une puce sur le plan affiche l'image et la description du lieu en bas de l'interface|
 
 
 
 
 |La page Contact|
 |:---:|
-|**Fonctionnalités :**|
-||
-|*Consultation de la liste de contacts|
-|Un clic sur l'une des catégories (par exemple : inscription) fait apparaitre les différents contacts de la catégorie.|
-|*Envoyer de messages|
-|Un clic sur un contact fait apparaitre une fenêtre permettant l'envoi de mail.|
+|**Fonctionnalités :**
+*Consultation de la liste de contacts
+Un clic sur l'une des catégories (par exemple : inscription) fait apparaitre les différents contacts de la catégorie.
+*Envoyer de messages
+Un clic sur un contact fait apparaitre une fenêtre permettant l'envoi de mail.|
 
 
 |La page Learn French|
 |:---:|
-|| 
-|**Fonctionnalités :**|
-||
-|*l’apprentissage de la langue locale|
-|Dans cette page il y aura les différents mots clés et phrases courantes de la langue française traduites dans la langue de l'utilisateur.|
+|**Fonctionnalités :**
+*l’apprentissage de la langue locale
+Dans cette page il y aura les différents mots clés et phrases courantes de la langue française traduites dans la langue de l'utilisateur.|
 
 
 
