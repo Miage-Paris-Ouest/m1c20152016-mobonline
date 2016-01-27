@@ -29,14 +29,13 @@ Les étudiants utilisent une application android et les administrateurs un porta
 
 ## L’application proposera les fonctionnalités suivantes:
 ### Pour les étudiants :
+
+
 <TABLE BORDER="1"> 
 <TR> 
-  <TH  colspan=2> La page de connexion </TH> 
+  <TH> La page de connexion </TH> 
 </TR> 
 <TR> 
- <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/login.png" alt="page de connexion" />
- </TD> 
  <TD> Fonctionnalités : </br>
  <ul>
 <li>La connexion (possibilité de se connecter via un login et mot de passe)</li>
@@ -48,14 +47,12 @@ Les étudiants utilisent une application android et les administrateurs un porta
 </TR> 
 </TABLE> 
 
+
 <TABLE BORDER="1"> 
 <TR> 
-  <TH  colspan=2> La page d'accueil </TH> 
+  <TH> La page d'accueil </TH> 
 </TR> 
 <TR> 
- <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/accueil.png" alt="page d'accueil" />
- </TD> 
  <TD> Fonctionnalités : </br>
  <ul>
 <li>Les News du bandeau défilant</li>
@@ -67,26 +64,20 @@ Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie
 </TR> 
 </TABLE>
 
+
 <TABLE BORDER="1"> 
 <TR> 
-  <TH  colspan=2> La page How To ? </TH> 
+  <TH> La page How To ? </TH> 
 </TR> 
-<TR> 
- <TD>
- <center><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/how%20to.png" alt="page How To ?" /></center>
- </TD> 
- <TD>
- <center><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/how%20to%202.png" alt="page How To ?" /></center>
- </TD> 
- </TR>
  <TR>
- <TD colspan=2> Fonctionnalités : </br>
+ <TD > Fonctionnalités : </br>
  <ul>
 <li>Se renseigner sur les moyens de transport, d’hébergement, restauration les ainsi que les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université</li>
  </ul>
  </TD> 
 </TR> 
 </TABLE>
+
 
  <TABLE BORDER="1"> 
 <TR> 
@@ -103,20 +94,17 @@ Une liste d'activités est proposée de base à l'étudiant erasmus afin de lui 
 <li>Valider une activité</li>
 <li>Supprimer une activité</li>
 <li>Ajouter une activité</li>
-                                                                                                                   
  </ul>
  </TD> 
 </TR> 
 </TABLE>
 
+
  <TABLE BORDER="1"> 
 <TR> 
-  <TH  colspan=2> La page Culture </TH> 
+  <TH> La page Culture </TH> 
 </TR> 
 <TR> 
- <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/culture.png" alt="page Culture" />
- </TD> 
  <TD> Fonctionnalités : </br>
  <ul>
 <li>Consultation des activités culturelles proposées</li>
@@ -127,14 +115,12 @@ Un clic sur une catégorie fait apparaitre les différentes activités liés à 
 </TR> 
 </TABLE>
 
+
 <TABLE BORDER="1"> 
 <TR> 
-  <TH  colspan=2> La page Map </TH> 
+  <TH> La page Map </TH> 
 </TR> 
 <TR> 
- <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master//GUI/img/map.png" alt="page map" />
- </TD> 
  <TD> Fonctionnalités : </br>
  <ul>
 <li>Consulter le plan de l’université</li>
@@ -146,14 +132,12 @@ Un clic sur une catégorie fait apparaitre les différentes activités liés à 
 </TR> 
 </TABLE>
 
+
  <TABLE BORDER="1"> 
 <TR> 
   <TH  colspan=2> La page Contact </TH> 
 </TR> 
 <TR> 
- <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/contact.png" alt="page Contact" />
- </TD> 
  <TD> Fonctionnalités : </br>
  <ul>
 <li>Consultation de la liste de contacts</li>
@@ -166,20 +150,15 @@ Un clic sur un contact fait apparaitre une fenêtre permettant l'envoi de mail.
 </TABLE>
 
 
-
 <TABLE BORDER="1"> 
 <TR> 
-  <TH  colspan=2> La page Learn French </TH> 
+  <TH> La page Learn French </TH> 
 </TR> 
 <TR> 
- <TD>
- <img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/GUI/img/learning%20french.png" alt="page Learn French ?" />
- </TD> 
  <TD> Fonctionnalités : </br>
  <ul>
 <li>l’apprentissage de la langue locale</li>
 Dans cette page il y aura les différents mots clés et phrases courantes de la langue française traduites dans la langue de l'utilisateur.
-                                                                                                                   
  </ul>
  </TD> 
 </TR> 
