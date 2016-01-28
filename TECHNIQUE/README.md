@@ -43,8 +43,8 @@ Création du prototype de l'application représentant les différentes vues de l'ap
 	BootStrap un framework pour rendre responsive simplement une application Web, via du HTML5/CSS3 et JS.
 * Apache
 * Conteneur WEB (pour faire tourner les Servlets Java) :  
-	Apache Tomcat  
-	GlassFish Server  
+	- Apache Tomcat  
+	- GlassFish Server  
 
 **IDE :**
 * Android Studio pour l'application mobile
@@ -52,8 +52,8 @@ Création du prototype de l'application représentant les différentes vues de l'ap
 
 **Frameworks / API utilisés :**
 * Pour le site web:  
-	Struts un framework MVC pour les applications Web Java.  
-	BootStrap un framework pour rendre responsive simplement une application Web, via du HTML5/CSS3 et JS.
+	- Struts un framework MVC pour les applications Web Java.  
+	- BootStrap un framework pour rendre responsive simplement une application Web, via du HTML5/CSS3 et JS.
 
 **Versionning :**
 * Github
