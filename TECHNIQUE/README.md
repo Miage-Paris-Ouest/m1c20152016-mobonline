@@ -42,17 +42,17 @@ Création du prototype de l'application représentant les différentes vues de l'ap
 	Struts un framework MVC pour les applications Web Java.
 	BootStrap un framework pour rendre responsive simplement une application Web, via du HTML5/CSS3 et JS.
 * Apache
-* Conteneur WEB (pour faire tourner les Servlets Java) :
-	Apache Tomcat
-	GlassFish Server
+* Conteneur WEB (pour faire tourner les Servlets Java) :  
+	Apache Tomcat  
+	GlassFish Server  
 
 **IDE :**
 * Android Studio pour l'application mobile
 * Netbeans pour l'application web d'administration
 
 **Frameworks / API utilisés :**
-* Pour le site web:
-	Struts un framework MVC pour les applications Web Java.
+* Pour le site web:  
+	Struts un framework MVC pour les applications Web Java.  
 	BootStrap un framework pour rendre responsive simplement une application Web, via du HTML5/CSS3 et JS.
 
 **Versionning :**
