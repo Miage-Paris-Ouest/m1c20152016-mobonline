@@ -4,7 +4,6 @@
 /local.properties
 build/
 /app/app.iml
-/app/build.gradle
 /build/intermediates/gradle_project_sync_data.bin
 
 # Idea
