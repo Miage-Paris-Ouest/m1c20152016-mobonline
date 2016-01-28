@@ -24,3 +24,13 @@ INSERT INTO M1_BUILDING_TYPES VALUES(4,'Sports Complex');
 INSERT INTO M1_BUILDING_TYPES VALUES(5,'Medical Center');
 INSERT INTO M1_BUILDING_TYPES VALUES(6,'Library');
 INSERT INTO M1_BUILDING_TYPES VALUES(7,'Administration');
+
+
+
+INSERT INTO M1_BUILDINGS VALUES(1,'University Library','Bibliothèque Universitaire of Nanterre,\nWith much than 450 000 books which 80 % are in free access to read, Nanterre is one of the biggest île de France BU.',48.905279299779636, 2.215743468215919,1,6);
+INSERT INTO M1_BUILDINGS VALUES(2,'Nanterre Université Station','Great Station desserved by RER A and Train L.', 48.90158384898947, 2.215217755249,1,2);
+INSERT INTO M1_BUILDINGS VALUES(3,'Main Sports Complex','Swimming Pool, Badbinton court, Musculation machines all is there !', 48.903918220875866, 2.2132114629058606,1,4);
+INSERT INTO M1_BUILDINGS VALUES(4,'University Residence','You can sleep here for not too much Money. \nThere are 770 rooms ...', 48.905787173863516, 2.212728770595504,1,1);
+
+
+
