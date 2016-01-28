@@ -1,26 +1,68 @@
 @startuml
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
-
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+class Student{
+    String login
+    String mdp
+    String mail
+    String nationality
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+class ToDoList{
+    List <String> toDo
+
 }
+
+class HowTo{
+
+}
+
+class Culture{
+
+
+}
+
+
+class Map{
+
+
+}
+
+class MapInfo{
+    String name
+    String 
+
+
+}
+
+
+class Contacts{
+
+
+}
+
+class Contact{
+    String firstName
+    String lastName
+    String mail
+    String job
+
+
+
+
+}
+
+
+class LearningLanguage{
+
+
+}
+
+class Word{
+    String localWord
+    String nationalyWord
+
+}
+
+
 
 @enduml
