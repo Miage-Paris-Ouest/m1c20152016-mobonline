@@ -13,8 +13,7 @@ build/
 .idea/**/*
 
 # Netbeans for WebSite
-/ADMIN_WEB_SITE/NanterasmusWebApplication/nbproject/
-/ADMIN_WEB_SITE\NanterasmusWebApplication/build.xml
+/ADMIN_WEB_SITE/NanterasmusWebApplication/nbproject/private/
 
 # Mac OS
 
