@@ -9,14 +9,16 @@ build/
 # Idea
 
 *.iml
+
 !.idea/codeStyleSettings.xml
 .idea/**/*
 
 # Netbeans for WebSite
+
+/ADMIN_WEB_SITE/NanterasmusWebApplication/nbproject/project.properties
 /ADMIN_WEB_SITE/NanterasmusWebApplication/nbproject/private/
 
 # Mac OS
 
 .DS_Store
 /captures
-/ADMIN_WEB_SITE/NanterasmusWebApplication/nbproject/private/
