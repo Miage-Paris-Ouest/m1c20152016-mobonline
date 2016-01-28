@@ -1,26 +1,131 @@
 @startuml
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
 
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
+    class News{
 
-class ArrayList {
-Object[] elementData
-size()
-}
+    }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
-}
+
+
+    class LogIn{
+
+    }
+
+
+    class Authentification{
+        connection()
+    }
+
+    class Profil{
+        String login
+        String mdp
+        String mail
+        String nationality
+
+    }
+
+
+
+
+
+    class HowTo{
+
+    }
+
+    class ToDoList{
+        List <String> toDo
+
+    }
+
+
+    class Culture{
+
+
+    }
+
+    class Museums{
+        String name
+
+
+    }
+
+    class Monuments{
+        String name
+
+    }
+
+    class Restoration{
+        String name
+
+    }
+
+
+    class Map{
+
+
+    }
+
+    class MapInfo{
+        String name
+        String description
+        Image img
+
+
+    }
+
+
+    class Contacts{
+
+
+    }
+
+    class Contact{
+        String firstName
+        String lastName
+        String mail
+        String job
+
+
+
+
+    }
+
+
+    class LearningLanguage{
+
+
+    }
+
+    class Word{
+        String localWord
+        String nationalityWord
+
+    }
+
+    News -> LogIn
+    Profil ->News
+    ToDoList -> News
+    HowTo -> News
+    Culture -> News
+    Map -> News
+    Contact -> News
+    LearningLanguage -> News
+
+    Museums --|> Culture
+    Monuments --|> Culture
+    Restoration --|> Culture
+
+
+    Contacts "0..*" -- "1..*" Contact
+
+    Word "0..*" -- "1..*" LearningLanguage
+
+
+    MapInfo "0..*" -- "1..*" Map
+
+    Authentification --|> LogIn
+
+
 
 @enduml
