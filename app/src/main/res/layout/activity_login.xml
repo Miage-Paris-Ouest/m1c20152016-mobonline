@@ -21,7 +21,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Nanterasmus"
             android:id="@+id/textView2"
-            android:textSize="30dp"
+            android:textSize="40dp"
             android:textColor="#ffffffff" />
 
 
@@ -35,56 +35,70 @@
         android:background="#696969"
         android:gravity="center_vertical|bottom|center_horizontal">
 
-        <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
-            android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:visibility="gone" />
         <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:orientation="vertical">
+                    android:layout_height="259dp" android:orientation="vertical">
 
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/logo"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal" />
 
                     <EditText android:id="@+id/email" android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" android:maxLines="1"
+                        android:layout_height="30dp"
+                        android:maxLines="1"
                         android:singleLine="true"
-                        android:layout_marginBottom="10dp"
-                        android:textColorHint="#ffffffff"
+                        android:layout_marginBottom="20dp"
+                        android:textColorHint="#696969"
                         android:textColor="#696969"
                         android:background="#ffffff"
-                        android:text="User"
-                        android:autoText="false" />
+                        android:autoText="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="User"
+                        android:inputType="text"
+                        android:gravity="center_horizontal" />
 
                     <EditText android:id="@+id/password" android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
                         android:imeOptions="actionUnspecified" android:inputType="textPassword"
                         android:maxLines="1" android:singleLine="true"
-                        android:layout_marginBottom="10dp"
-                        android:textColorHint="#ffffffff"
+                        android:layout_marginBottom="40dp"
+                        android:textColorHint="#696969"
                         android:textColor="#696969"
-                        android:text="Password"
-                        android:background="#ffffff" />
+                        android:background="#ffffff"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Password"
+                        android:gravity="center_horizontal" />
 
                     <Button android:id="@+id/connexion_button" style="?android:textAppearanceSmall"
                         android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:textStyle="bold"
                         android:textColor="#ffffffff"
                         android:background="#FEA347"
-                        android:text="Connexion" />
+                        android:text="Connexion"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll3"
         android:layout_width="match_parent"
-        android:layout_height="155dp"
+        android:layout_height="118dp"
         android:gravity="bottom|center_horizontal"
         android:orientation="horizontal">
 
