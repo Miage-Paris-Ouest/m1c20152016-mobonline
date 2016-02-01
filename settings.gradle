@@ -1,1 +1,1 @@
-include ':app', ':ojdbc6'
+include ':app'

@@ -63,21 +63,8 @@ public class Login extends Activity {
 
         }
 
-
         if(log)
         {
-
-            try{
-                ConnectionBDD db = new ConnectionBDD();
-                ResultSet rs = db.selectResult("SELECT * FROM M1_USERS  where user_login='"+email+"' and user_password='"+password+"'");
-                rs.next();
-                String nom = rs.getString("user_login");
-                String prenom = rs.getString("user_password");
-                size=rs.getRow();
-
-            } catch(Exception e) {
-
-            }
 
         }
 
