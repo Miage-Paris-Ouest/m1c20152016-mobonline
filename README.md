@@ -89,8 +89,8 @@ Les étudiants utilisent une application android et les administrateurs un porta
 
 |UseCase|
 |:---:|
-|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase/StudentUseCase.png "Use case")|
-|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase/AdminUseCase.png "Use case")|
+|**Use Case Student :**![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase/StudentUseCase.png "Use case")|
+|**Use Case Admin :**![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase/AdminUseCase.png "Use case")|
 * Diagramme de séquences
 
 |StudentSequence|NanterreUniversityAdmin|UniversityAdmin|
