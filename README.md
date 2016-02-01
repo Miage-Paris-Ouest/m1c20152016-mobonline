@@ -31,12 +31,12 @@ Les étudiants utilisent une application android et les administrateurs un porta
 ### Pour les étudiants :
 
 
-|La page de connexion|
-|:---:|
+|<center>La page de connexion</center>|
+|:---|
 |**Fonctionnalités :** <ul><li> La connexion (possibilité de se connecter via un login et mot de passe)</li><li> La déconnexion </li><li> La configuration du profil </li><li> consulter les News de l’université</li><ul>|
 
 
-|La page d'accueil|
+|<center>La page d'accueil</center>|
 |:---|
 |**Fonctionnalités :** <ul><li> Les News du bandeau défilant</li>Un clic sur une news permet l'affichage détaillé de cette news.<li> Le bloc des 6 boutons principaux</li>Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie|
 
