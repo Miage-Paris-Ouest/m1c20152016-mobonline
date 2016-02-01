@@ -38,57 +38,38 @@ Les étudiants utilisent une application android et les administrateurs un porta
 
 |La page d'accueil|
 |:---:|
-|**Fonctionnalités :** <ul><li> Les News du bandeau défilant</li></br>Un clic sur une news permet l'affichage détaillé de cette news.<li> Le bloc des 6 boutons principaux</li><li></br>Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie|
+|**Fonctionnalités :** <ul><li> Les News du bandeau défilant</li>Un clic sur une news permet l'affichage détaillé de cette news.<li> Le bloc des 6 boutons principaux</li>Un clic sur l'un de ces boutons permet la redirection vers la catégorie choisie|
 
 |La page How To ?|
 |:---:|
-|**Fonctionnalités :**
-*Se renseigner sur les moyens de transport, d’hébergement, restauration les ainsi que les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université|
+|**Fonctionnalités :** <ul><li> Se renseigner sur les moyens de transport, d’hébergement, restauration les ainsi que les tâches administratives tel que l’inscription pédagogique, la demande de bourse, le contrat d’échange inter-université</li><ul>|
 
 
 |La page To Do List|
 |:---:|
-|**Fonctionnalités**
-*Consultation des activités à effectuer
-Une liste d'activités est proposée de base à l'étudiant erasmus afin de lui premettre de s'intégrer plus facilement.
-*Valider une activité
-*Supprimer une activité
-*Ajouter une activité|
+|**Fonctionnalités** <ul><li>Consultation des activités à effectuer</li><li>Une liste d'activités est proposée de base à l'étudiant erasmus afin de lui premettre de s'intégrer plus facilement.</li><li>Valider une activité</li><li>Supprimer une activité</li><li>Ajouter une activité</li></ul>|
 
 
 |La page Culture|
 |:---:|
-|**Fonctionnalités :**
-*Consultation des activités culturelles proposées
-*Affichage par catégorie
-Un clic sur une catégorie fait apparaitre les différentes activités liés à la catégorie avec un effet drop-down.|
+|**Fonctionnalités :** <ul><li>Consultation des activités culturelles proposées</li><li>Affichage par catégorie</li><li>Un clic sur une catégorie fait apparaitre les différentes activités liés à la catégorie avec un effet drop-down.</li></ul>|
 
 
 |La page Map|
 |:---:|
-|**Fonctionnalités :**
-*Consulter le plan de l’université
-*Affichage du menu latéral en drop-right en cliquant sur le bouton loupe
-*Localisation des différents endroits en fonction de la selection du menu latéral à l'aide des puces de localisation
-*Un clic sur une puce sur le plan affiche l'image et la description du lieu en bas de l'interface|
+|**Fonctionnalités :** <ul><li>Consulter le plan de l’université</li><li>Affichage du menu latéral en drop-right en cliquant sur le bouton loupe</li><li>Localisation des différents endroits en fonction de la selection du menu latéral à l'aide des puces de localisation</li><li>Un clic sur une puce sur le plan affiche l'image et la description du lieu en bas de l'interface</li></ul>|
 
 
 
 
 |La page Contact|
 |:---:|
-|**Fonctionnalités :**
-*Consultation de la liste de contacts
-Un clic sur l'une des catégories (par exemple : inscription) fait apparaitre les différents contacts de la catégorie.
-*Envoyer de messages
-Un clic sur un contact fait apparaitre une fenêtre permettant l'envoi de mail.|
+|**Fonctionnalités :** <ul><li>Consultation de la liste de contacts</li>Un clic sur l'une des catégories (par exemple : inscription) fait apparaitre les différents contacts de la catégorie.<li>Envoyer de messages</li>Un clic sur un contact fait apparaitre une fenêtre permettant l'envoi de mail.</ul>|
 
 
 |La page Learn French|
 |:---:|
-|**Fonctionnalités :**
-*l’apprentissage de la langue locale
-Dans cette page il y aura les différents mots clés et phrases courantes de la langue française traduites dans la langue de l'utilisateur.|
+|**Fonctionnalités :** <ul><li>l’apprentissage de la langue locale</li>Dans cette page il y aura les différents mots clés et phrases courantes de la langue française traduites dans la langue de l'utilisateur.</ul>|
 
 
 
