@@ -2,6 +2,7 @@ package fr.p10.miage.m1.myapplication;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -40,18 +41,17 @@ public class Login extends Activity {
 
 
     public void initLogin() {
-        int size=0;
+
         emailTextView.setError(null);
         passwordTextView.setError(null);
 
         String email = emailTextView.getText().toString();
         String password = passwordTextView.getText().toString();
 
-        String emailBDD=null;
-        String passwordBDD=null;
 
         boolean log=true;
 
+        //email et mdp vide
         if (TextUtils.isEmpty(password)) {
             passwordTextView.setError(getString(R.string.field_required));
             log=false;
@@ -63,22 +63,22 @@ public class Login extends Activity {
 
         }
 
+        //test des log avec fichier property temporaire
+        if(!email.equals(getString(R.string.adrien_user))){
+            emailTextView.setError(getString(R.string.invalid_email));
+            log=false;
+        }
+
+        if(!password.equals(getString(R.string.adrien_mdp))){
+            passwordTextView.setError(getString(R.string.incorrect_password));
+            log=false;
+        }
+
         if(log)
         {
-
+            Intent intent = new Intent(this,Accueil.class);
+            startActivity(intent);
         }
-
-        if(size==0)
-        {
-            if(!email.equals(emailBDD)){
-                emailTextView.setError(getString(R.string.invalid_email));
-            }
-
-            if(!password.equals(passwordBDD)){
-                passwordTextView.setError(getString(R.string.incorrect_password));
-            }
-        }
-
 
     }
 
