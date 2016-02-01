@@ -99,5 +99,10 @@ Les étudiants utilisent une application android et les administrateurs un porta
 
 
 * Diagramme de classe
+
+|NantErasmus|
+|:---:|
+|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/Classe/NantErasmus.png "Diagramme de classe")|
+
 * Diagramme technique
 
