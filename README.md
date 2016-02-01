@@ -33,11 +33,7 @@ Les étudiants utilisent une application android et les administrateurs un porta
 
 |La page de connexion|
 |:---:|
-|**Fonctionnalités :**
-* La connexion (possibilité de se connecter via un login et mot de passe)
-* La déconnexion
-* La configuration du profil
-* consulter les News de l’université|
+|**Fonctionnalités :** <div>* La connexion (possibilité de se connecter via un login et mot de passe) * La déconnexion * La configuration du profil * consulter les News de l’université</div>|
 
 
 |La page d'accueil|
