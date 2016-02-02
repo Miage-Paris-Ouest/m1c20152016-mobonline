@@ -74,6 +74,7 @@ public class Login extends Activity {
             log=false;
         }
 
+
         if(log)
         {
             Intent intent = new Intent(this,Accueil.class);
