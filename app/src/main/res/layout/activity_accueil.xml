@@ -1,33 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:id="@+id/gd">
 
     <TextView
         android:text="News"
         android:textSize="32dip"
-
-        android:layout_column="0"
-        android:layout_row="0"
-        android:layout_columnSpan="2" />
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_above="@+id/toDoList" />
 
     <ImageButton
         android:id="@+id/howTo"
         android:src="@drawable/howto"
-        android:layout_column="0"
-        android:layout_row="1"
-        android:layout_columnSpan="1" />
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="20dp"
+        android:background="#FEA347"
+        android:clickable="true" />
 
     <ImageButton
         android:id="@+id/toDoList"
         android:src="@drawable/todolist"
-        android:layout_column="1"
-        android:layout_row="1"
-        android:layout_columnSpan="1"
-        />
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignTop="@+id/howTo"
+        android:layout_marginRight="20dp"
+        android:background="#FEA347" />
 
-</GridLayout>
+
+    <ImageButton
+        android:id="@+id/culture"
+        android:src="@drawable/culture"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/howTo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:background="#FEA347"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/map"
+        android:src="@drawable/map"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/toDoList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:background="#FEA347"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/contact"
+        android:src="@drawable/contact"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/culture"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:background="#FEA347"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/learnFrench"
+        android:src="@drawable/learnfrench"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/map"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:background="#FEA347"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="How To ?"
+        android:id="@+id/textHowTo"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/howTo"
+        android:layout_alignRight="@+id/howTo"
+        android:layout_alignEnd="@+id/howTo"
+        android:layout_marginRight="42dp"
+        android:layout_marginEnd="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="To Do List "
+        android:id="@+id/textToDoList"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/map"
+        android:layout_alignLeft="@+id/toDoList"
+        android:layout_alignStart="@+id/toDoList"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Map"
+        android:id="@+id/textMap"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/learnFrench"
+        android:layout_alignLeft="@+id/map"
+        android:layout_alignStart="@+id/map"
+        android:layout_marginLeft="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Contact"
+        android:id="@+id/textContact"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/contact"
+        android:layout_toLeftOf="@+id/learnFrench"
+        android:layout_toStartOf="@+id/learnFrench"
+        android:layout_marginRight="50dp" />
+
+</RelativeLayout>
 

@@ -33,7 +33,7 @@ public class Login extends Activity {
             }
         });
 
-        loginFormView = findViewById(R.id.login_form);
+        
     }
 
 

@@ -31,6 +31,30 @@
         <activity
             android:name=".Accueil"
             android:label="@string/title_activity_accueil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ToDoList"
+            android:label="@string/title_activity_to_do_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HowTo"
+            android:label="HowTo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Culture"
+            android:label="@string/title_activity_culture"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Map"
+            android:label="@string/title_activity_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Contact"
+            android:label="@string/title_activity_contact"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LearnFrench"
+            android:label="@string/title_activity_learn_french"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
