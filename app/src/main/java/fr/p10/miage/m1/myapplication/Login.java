@@ -9,9 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import java.sql.ResultSet;
-import java.util.ArrayList;
-
 
 public class Login extends Activity {
 
@@ -51,6 +48,19 @@ public class Login extends Activity {
 
         boolean log=true;
 
+
+        //test des log avec fichier property temporaire
+        if(!email.equals(getString(R.string.adrien_user))){
+            emailTextView.setError(getString(R.string.invalid_email));
+            log=false;
+        }
+
+        if(!password.equals(getString(R.string.adrien_mdp))){
+            passwordTextView.setError(getString(R.string.incorrect_password));
+            log=false;
+        }
+
+
         //email et mdp vide
         if (TextUtils.isEmpty(password)) {
             passwordTextView.setError(getString(R.string.field_required));
@@ -63,16 +73,6 @@ public class Login extends Activity {
 
         }
 
-        //test des log avec fichier property temporaire
-        if(!email.equals(getString(R.string.adrien_user))){
-            emailTextView.setError(getString(R.string.invalid_email));
-            log=false;
-        }
-
-        if(!password.equals(getString(R.string.adrien_mdp))){
-            passwordTextView.setError(getString(R.string.incorrect_password));
-            log=false;
-        }
 
 
         if(log)
