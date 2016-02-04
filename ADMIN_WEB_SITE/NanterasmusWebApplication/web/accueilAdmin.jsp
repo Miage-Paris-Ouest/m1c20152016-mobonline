@@ -1,12 +1,9 @@
 <%-- 
-    Document   : notesEtudiant
+    Document   : accueilAdmin
     Created on : 11 déc. 2015, 00:28:25
     Author     : florian
 --%>
 
-<%@page import="java.util.Map"%>
-<%@page import="java.util.List"%>
-<a href="accueilAdmin.jsp"></a>
 <%@page import="fr.p10.miage.nanterasmus.model.personne.Admin"%>
 
 <%
@@ -30,4 +27,7 @@
                 <bean:message key="accueil.admin.body.title"/> <%= admin.getPrenom()+" "+admin.getNom() %>!
             </h1>
             
-    <jsp:include page="global/footer.jsp" /> 
+    <jsp:include page="global/footer.jsp" />
+<%
+    }
+%>

@@ -1,11 +1,10 @@
 <%-- 
-    Document   : accueilEnseignant
+    Document   : accueilSuperAdmin
     Created on : 11 déc. 2015, 01:13:19
     Author     : florian
 --%>
 
 <%@page import="fr.p10.miage.nanterasmus.model.personne.SuperAdmin"%>
-<%@page import="java.util.Map"%>
 
 <%
     SuperAdmin superAdmin=session.getAttribute("superadmin")==null?null:(SuperAdmin)session.getAttribute("superadmin");
