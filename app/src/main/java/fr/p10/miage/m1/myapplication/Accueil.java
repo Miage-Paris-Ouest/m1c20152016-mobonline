@@ -2,10 +2,7 @@ package fr.p10.miage.m1.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
@@ -23,12 +20,12 @@ public class Accueil extends AppCompatActivity {
 
     public void addListenerOnButton() {
 
-        ImageButton howTo = (ImageButton) findViewById(R.id.howTo);
-        ImageButton contact = (ImageButton) findViewById(R.id.contact);
-        ImageButton culture = (ImageButton) findViewById(R.id.culture);
-        ImageButton learnFrench = (ImageButton) findViewById(R.id.learnFrench);
-        ImageButton map = (ImageButton) findViewById(R.id.map);
-        ImageButton toDoList = (ImageButton) findViewById(R.id.toDoList);
+        ImageButton howTo = (ImageButton) findViewById(R.id.activity_accueil_image_button_howto);
+        ImageButton contact = (ImageButton) findViewById(R.id.activity_accueil_image_button_contact);
+        ImageButton culture = (ImageButton) findViewById(R.id.activity_accueil_image_button_culture);
+        ImageButton learnFrench = (ImageButton) findViewById(R.id.activity_accueil_image_button_learning_locale);
+        ImageButton map = (ImageButton) findViewById(R.id.activity_accueil_image_button_map);
+        ImageButton toDoList = (ImageButton) findViewById(R.id.activity_accueil_image_button_todolist);
 
         howTo.setOnClickListener(new OnClickListener() {
 

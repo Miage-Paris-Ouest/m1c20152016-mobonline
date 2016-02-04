@@ -21,11 +21,11 @@ public class Login extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        emailTextView = (EditText) findViewById(R.id.email);
+        emailTextView = (EditText) findViewById(R.id.activity_login_edit_text_email);
 
-        passwordTextView = (EditText) findViewById(R.id.password);
+        passwordTextView = (EditText) findViewById(R.id.activity_login_edit_text_password);
 
-        Button loginButton = (Button) findViewById(R.id.connexion_button);
+        Button loginButton = (Button) findViewById(R.id.activity_login_button_connection);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

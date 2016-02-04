@@ -7,6 +7,6 @@
 
     <TextView android:text="ToDoList" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/toDoList" />
+        android:id="@+id/activity_accueil_image_button_todolist" />
 
 </RelativeLayout>

@@ -7,6 +7,6 @@
 
     <TextView android:text="Culture" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/culture" />
+        android:id="@+id/activity_accueil_image_button_culture" />
 
 </RelativeLayout>

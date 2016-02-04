@@ -7,6 +7,6 @@
 
     <TextView android:text="How to ?" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/howTo" />
+        android:id="@+id/activity_accueil_image_button_howto" />
 
 </RelativeLayout>
