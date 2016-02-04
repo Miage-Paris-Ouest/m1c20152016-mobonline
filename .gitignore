@@ -22,3 +22,14 @@ build/
 
 .DS_Store
 /captures
+/ADMIN_WEB_SITE/NanterasmusWEB/nbproject/private/
+/ADMIN_WEB_SITE/NanterasmusWEB/NanterasmusWEB-war/nbproject/private/
+/ADMIN_WEB_SITE/NanterasmusWEB/NanterasmusWEB-ejb/nbproject/private/
+/ADMIN_WEB_SITE/HelloWorld/nbproject/private/
+/CustomerDB/nbproject/private/
+/Calculator/CalculatorApp/nbproject/private/
+/Calculator/CalculatorClientApp/nbproject/private/
+/MessageBoard/nbproject/private/
+/mavenproject1/NanterasmusWEB/target/
+/NanterasmusWEB/target/
+/ADMIN_WEB_SITE/NanterasmusWEB/target/
