@@ -7,12 +7,13 @@ package fr.p10.miage.projet1.nanterasmusweb.REST;
 
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
+import javax.ws.rs.QueryParam;
 
 /**
  * REST Web Service
@@ -36,15 +37,14 @@ public class HelloWorld {
      * @return an instance of java.lang.String
      */
     @GET
+    @Consumes("text/plain")
     @Produces("application/xml")
-    public String getXml() {
-        //TODO return proper representation object
-        return "<note>\n" +
-            "<to>Tove</to>\n" +
-            "<from>Jani</from>\n" +
-            "<heading>Reminder</heading>\n" +
-            "<body>Don't forget me this weekend!</body>\n" +
-            "</note>";
+    public String getXml(@DefaultValue("2") @QueryParam("a") int a,@DefaultValue("2") @QueryParam("b")int b) {
+        return "<note>\n"
+                + "<a>"+a+"</a>\n"
+                +"<b>"+b+"</b>\n"
+                + "<c>"+(a+b)+"</c>\n"
+                + "</note>";
     }
 
     /**
@@ -55,5 +55,6 @@ public class HelloWorld {
     @PUT
     @Consumes("application/xml")
     public void putXml(String content) {
+        System.out.println("PUT:"+content);
     }
 }
