@@ -124,4 +124,20 @@ public final class QueryDB {
         return null;
     }
     
+    public boolean checkLogin(String login, String pwd) throws Exception {
+        boolean isUserAvailable = false;
+        System.out.println("login:"+login+", mdp:"+pwd);
+
+        pStatement = cnx.prepareStatement("SELECT * FROM M1_USERS, M1_PERSONS, M1_STATUS "
+                    + " WHERE STATUS = STATUS_ID AND PERSON_ID = PERSON AND USER_LOGIN = ? AND USER_PASSWORD = ?");
+        pStatement.setString(1, login);
+        pStatement.setString(2, pwd);
+        
+        res=pStatement.executeQuery();
+        while (res.next()) {
+                isUserAvailable = true;
+        }
+        return isUserAvailable;
+    }
+    
 }
