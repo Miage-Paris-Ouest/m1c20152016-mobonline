@@ -71,12 +71,6 @@
 		<groupId>com.oracle</groupId>
 		<artifactId>ojdbc6</artifactId>
 		<version>11.2.0</version>
-                <!-- 
-                A enlever, c'est pour que ce soit simple à installer sur un pc
-                autre car oracle n'est pas telechargeable via les dépendances maven
-                -->
-                <scope>system</scope>
-                <systemPath>${basedir}/lib/ojdbc6.jar</systemPath> 
 	</dependency>
         <dependency>
 		<groupId>org.json</groupId>
