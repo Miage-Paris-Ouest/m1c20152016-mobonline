@@ -1,5 +1,6 @@
 package fr.p10.miage.projet1.nanterasmusweb.model.util;
 
+import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -17,14 +18,16 @@ public class Utility {
     /**
      * Method to construct JSON
      * 
-     * @param tag
+     * @param data
      * @param status
      * @return
      */
-    public static String constructJSON(String tag, boolean status) {
+    public static String constructJSON(Map<String,Object> data, boolean status) {
         JSONObject obj = new JSONObject();
         try {
-            obj.put("tag", tag);
+            for (String mapKey : data.keySet()) {
+                obj.put(mapKey, data.get(mapKey));
+            }
             obj.put("status", new Boolean(status));
         } catch (JSONException e) {
             
@@ -35,15 +38,17 @@ public class Utility {
     /**
      * Method to construct JSON with Error Msg
      * 
-     * @param tag
+     * @param data
      * @param status
      * @param err_msg
      * @return
      */
-    public static String constructJSON(String tag, boolean status,String err_msg) {
+    public static String constructJSON(Map<String,Object> data, boolean status,String err_msg) {
         JSONObject obj = new JSONObject();
         try {
-            obj.put("tag", tag);
+            for (String mapKey : data.keySet()) {
+                obj.put(mapKey, data.get(mapKey));
+            }
             obj.put("status", new Boolean(status));
             obj.put("error_msg", err_msg);
         } catch (JSONException e) {

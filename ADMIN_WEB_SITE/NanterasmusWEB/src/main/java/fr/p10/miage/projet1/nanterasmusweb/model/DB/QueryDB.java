@@ -124,8 +124,8 @@ public final class QueryDB {
         return null;
     }
     
-    public boolean checkLogin(String login, String pwd) throws Exception {
-        boolean isUserAvailable = false;
+    public Personne checkLogin(String login, String pwd) throws Exception {
+        Personne person=null;
         System.out.println("login:"+login+", mdp:"+pwd);
 
         pStatement = cnx.prepareStatement("SELECT * FROM M1_USERS, M1_PERSONS, M1_STATUS "
@@ -134,10 +134,10 @@ public final class QueryDB {
         pStatement.setString(2, pwd);
         
         res=pStatement.executeQuery();
-        while (res.next()) {
-                isUserAvailable = true;
+        if (res.next()) {
+            person=new Personne(res.getString("PERSON_FIRST_NAME"),res.getString("PERSON_LAST_NAME"),res.getString("PERSON_MAIL"));
         }
-        return isUserAvailable;
+        return person;
     }
     
 }

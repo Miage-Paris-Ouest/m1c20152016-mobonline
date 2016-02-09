@@ -12,7 +12,7 @@ import javax.ws.rs.core.Application;
  *
  * @author florian
  */
-@javax.ws.rs.ApplicationPath("webresources")
+@javax.ws.rs.ApplicationPath("REST")
 public class ApplicationConfig extends Application {
 
     @Override
@@ -29,7 +29,7 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(fr.p10.miage.projet1.nanterasmusweb.REST.Login.class);
+        resources.add(fr.p10.miage.projet1.nanterasmusweb.REST.User.class);
     }
     
 }

@@ -11,7 +11,7 @@ import fr.p10.miage.projet1.nanterasmusweb.model.DB.QueryDB;
  * @see Etudiant
  * @author florian
  */
-public abstract class Personne {
+public class Personne {
     
     /**
      * surname of the person.
