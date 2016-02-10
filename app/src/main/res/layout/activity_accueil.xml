@@ -1,153 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
-    
-    <TextView
-        android:text="News"
-        android:textSize="32dip"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <include
+        layout="@layout/app_bar_main"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:gravity="center"
-        android:id="@+id/activity_accueil_text_view_news"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="false"
-        android:layout_above="@+id/activity_accueil_image_button_todolist" />
+        android:layout_height="match_parent" />
 
-    <ImageButton
-        android:id="@+id/activity_accueil_image_button_howto"
-        android:src="@drawable/howto"
-        android:layout_width="170dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="false"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="20dp"
-        android:background="#FEA347"
-        android:clickable="true" />
-
-    <ImageButton
-        android:id="@+id/activity_accueil_image_button_todolist"
-        android:src="@drawable/todolist"
-        android:layout_width="170dp"
-        android:layout_height="120dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false"
-        android:layout_alignTop="@+id/activity_accueil_image_button_howto"
-        android:layout_marginRight="20dp"
-        android:background="#FEA347" />
-
-
-    <ImageButton
-        android:id="@+id/activity_accueil_image_button_culture"
-        android:src="@drawable/culture"
-        android:layout_width="170dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/activity_accueil_image_button_howto"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp"
-        android:background="#FEA347"
-        android:layout_marginTop="5dp" />
-
-    <ImageButton
-        android:id="@+id/activity_accueil_image_button_map"
-        android:src="@drawable/map"
-        android:layout_width="170dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/activity_accueil_image_button_todolist"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="20dp"
-        android:background="#FEA347"
-        android:layout_marginTop="5dp" />
-
-    <ImageButton
-        android:id="@+id/activity_accueil_image_button_contact"
-        android:src="@drawable/contact"
-        android:layout_width="170dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/activity_accueil_image_button_culture"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp"
-        android:background="#FEA347"
-        android:layout_marginTop="5dp" />
-
-    <ImageButton
-        android:id="@+id/activity_accueil_image_button_learning_locale"
-        android:src="@drawable/learnfrench"
-        android:layout_width="170dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/activity_accueil_image_button_map"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="20dp"
-        android:background="#FEA347"
-        android:layout_marginTop="5dp" />
-
-    <TextView
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="How To ?"
-        android:id="@+id/activity_accueil_text_view_howto"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="#ffffff"
-        android:layout_alignBottom="@+id/activity_accueil_image_button_howto"
-        android:layout_alignRight="@+id/activity_accueil_image_button_howto"
-        android:layout_alignEnd="@+id/activity_accueil_image_button_howto"
-        android:layout_marginRight="42dp"
-        android:layout_marginEnd="42dp" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="To Do List "
-        android:id="@+id/activity_accueil_text_view_todolist"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="#ffffff"
-        android:layout_above="@+id/activity_accueil_image_button_map"
-        android:layout_alignLeft="@+id/activity_accueil_image_button_todolist"
-        android:layout_alignStart="@+id/activity_accueil_image_button_todolist"
-        android:layout_marginLeft="42dp"
-        android:layout_marginRight="42dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Map"
-        android:id="@+id/activity_accueil_text_view_map"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="#ffffff"
-        android:layout_above="@+id/activity_accueil_image_button_learning_locale"
-        android:layout_alignLeft="@+id/activity_accueil_image_button_map"
-        android:layout_alignStart="@+id/activity_accueil_image_button_map"
-        android:layout_marginLeft="70dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Contact"
-        android:id="@+id/activity_accueil_text_view_contact"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="#ffffff"
-        android:layout_alignBottom="@+id/activity_accueil_image_button_contact"
-        android:layout_toLeftOf="@+id/activity_accueil_image_button_learning_locale"
-        android:layout_toStartOf="@+id/activity_accueil_image_button_learning_locale"
-        android:layout_marginRight="50dp" />
-
-</RelativeLayout>
-
+</android.support.v4.widget.DrawerLayout>
