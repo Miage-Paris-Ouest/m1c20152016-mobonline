@@ -9,7 +9,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Nanteramus"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".Login"
             android:label="@string/title_activity_login"
@@ -46,6 +46,10 @@
             android:name=".LearnFrench"
             android:label="@string/title_activity_learn_french"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
