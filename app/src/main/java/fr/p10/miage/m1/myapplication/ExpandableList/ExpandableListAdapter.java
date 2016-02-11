@@ -1,6 +1,8 @@
 package fr.p10.miage.m1.myapplication.ExpandableList;
 
 import android.content.Context;
+import android.content.Intent;
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,12 +13,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+// TESTING CLICKABLE TEXTVIEW
+import fr.p10.miage.m1.myapplication.Accueil;
 import fr.p10.miage.m1.myapplication.R;
 
-public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     public static final int HEADER = 0;
     public static final int CHILD = 1;
-
     private List<Item> data;
 
     public ExpandableListAdapter(List<Item> data) {
@@ -24,9 +27,10 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
     }
 
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int type) {
+    public RecyclerView.ViewHolder onCreateViewHolder(final ViewGroup parent, int type) {
+
         View view = null;
-        Context context = parent.getContext();
+        final Context context = parent.getContext();
         float dp = context.getResources().getDisplayMetrics().density;
         int subItemPaddingLeft = (int) (18 * dp);
         int subItemPaddingTopAndBottom = (int) (5 * dp);
@@ -37,7 +41,22 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                 ListHeaderViewHolder header = new ListHeaderViewHolder(view);
                 return header;
             case CHILD:
+
                 TextView itemTextView = new TextView(context);
+
+                // TESTING CLICABLE TEXTVIEW
+                itemTextView.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        Context context = parent.getContext();
+                        Intent intent = new Intent(context,Accueil.class)
+                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+
+                    }
+                });
+
                 itemTextView.setPadding(subItemPaddingLeft, subItemPaddingTopAndBottom, 0, subItemPaddingTopAndBottom);
                 itemTextView.setTextColor(0x88000000);
                 itemTextView.setLayoutParams(
@@ -132,4 +151,3 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
         }
     }
 }
-
