@@ -8,5 +8,5 @@
         android:title="@string/action_profile"
         android:orderInCategory="100"
         android:icon="@drawable/logo_tool_bar"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 </menu>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
     android:background="#FEA347"
     android:gravity="bottom"
     android:orientation="vertical"
@@ -15,15 +15,18 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="50dp"
+        android:paddingTop="25dp"
         android:src="@drawable/logo"
         android:layout_gravity="center_horizontal" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="150dp"
-        android:text="Menu"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Nanterasmus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="20dp" />
 
 </LinearLayout>

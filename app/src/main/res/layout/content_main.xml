@@ -35,24 +35,27 @@
             android:src="@drawable/howto"
             android:layout_width="170dp"
             android:layout_height="120dp"
-            android:layout_alignParentTop="false"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentStart="false"
-            android:layout_marginTop="130dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="131dp"
             android:background="#FEA347"
-            android:clickable="true" />
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:id="@+id/activity_accueil_image_button_todolist"
             android:src="@drawable/todolist"
             android:layout_width="170dp"
             android:layout_height="120dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="false"
             android:layout_alignTop="@+id/activity_accueil_image_button_howto"
-            android:layout_marginRight="20dp"
-            android:background="#FEA347" />
+            android:background="#FEA347"
+            android:layout_toRightOf="@+id/activity_accueil_text_view_howto"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
 
         <ImageButton
@@ -60,12 +63,10 @@
             android:src="@drawable/culture"
             android:layout_width="170dp"
             android:layout_height="120dp"
-            android:layout_below="@+id/activity_accueil_image_button_howto"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="20dp"
             android:background="#FEA347"
-            android:layout_marginTop="5dp" />
+            android:layout_alignBottom="@+id/activity_accueil_text_view_map"
+            android:layout_toLeftOf="@+id/activity_accueil_image_button_todolist"
+            android:layout_toStartOf="@+id/activity_accueil_image_button_todolist" />
 
         <ImageButton
             android:id="@+id/activity_accueil_image_button_map"
@@ -74,22 +75,23 @@
             android:layout_height="120dp"
             android:layout_below="@+id/activity_accueil_image_button_todolist"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="false"
             android:background="#FEA347"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/activity_accueil_image_button_culture"
+            android:layout_marginLeft="5dp" />
 
         <ImageButton
             android:id="@+id/activity_accueil_image_button_contact"
             android:src="@drawable/contact"
             android:layout_width="170dp"
             android:layout_height="120dp"
-            android:layout_below="@+id/activity_accueil_image_button_culture"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="20dp"
             android:background="#FEA347"
-            android:layout_marginTop="5dp" />
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/activity_accueil_image_button_map"
+            android:layout_toStartOf="@+id/activity_accueil_image_button_map"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/activity_accueil_image_button_culture" />
 
         <ImageButton
             android:id="@+id/activity_accueil_image_button_learning_locale"
@@ -99,9 +101,10 @@
             android:layout_below="@+id/activity_accueil_image_button_map"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="20dp"
             android:background="#FEA347"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/activity_accueil_image_button_contact" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -127,10 +130,8 @@
             android:textStyle="bold"
             android:textSize="20dp"
             android:textColor="#ffffff"
-            android:layout_above="@+id/activity_accueil_image_button_map"
-            android:layout_alignLeft="@+id/activity_accueil_image_button_todolist"
-            android:layout_alignStart="@+id/activity_accueil_image_button_todolist"
-            android:layout_marginLeft="42dp"
+            android:layout_alignBottom="@+id/activity_accueil_image_button_todolist"
+            android:layout_alignRight="@+id/activity_accueil_image_button_todolist"
             android:layout_marginRight="42dp" />
 
         <TextView
@@ -154,12 +155,14 @@
             android:text="Contact"
             android:id="@+id/activity_accueil_text_view_contact"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textColor="#ffffff"
             android:layout_alignBottom="@+id/activity_accueil_image_button_contact"
             android:layout_toLeftOf="@+id/activity_accueil_image_button_learning_locale"
             android:layout_toStartOf="@+id/activity_accueil_image_button_learning_locale"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="60dp"
+            android:layout_alignTop="@+id/activity_accueil_image_button_contact"
+            android:layout_marginTop="80dp" />
 
     </RelativeLayout>
 </RelativeLayout>

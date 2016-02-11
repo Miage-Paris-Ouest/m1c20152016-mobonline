@@ -4,11 +4,26 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_accueil"
-            android:icon="@drawable/todolist"
             android:title="Accueil" />
         <item
+            android:id="@+id/nav_to_contact"
+            android:title="Contact" />
+
+        <item
+            android:id="@+id/nav_to_culture"
+            android:title="Culture" />
+
+        <item
+            android:id="@+id/nav_to_how_to"
+            android:title="How to ?" />
+        <item
+            android:id="@+id/nav_to_learn_french"
+            android:title="Learn French" />
+        <item
+            android:id="@+id/nav_to_map"
+            android:title="Map" />
+        <item
             android:id="@+id/nav_to_dolist"
-            android:icon="@drawable/todolist"
             android:title="To Do List" />
 
     </group>
