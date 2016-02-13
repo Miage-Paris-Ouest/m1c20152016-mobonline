@@ -30,13 +30,29 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="false" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <ListView android:id="@+id/listView" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/activity_accueil_image_button_todolist"
-        android:layout_alignStart="@+id/activity_accueil_image_button_todolist" />
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_above="@+id/imageView7"
+        android:layout_below="@+id/imageView2"
+        android:transitionGroup="false" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Add to list"
+        android:id="@+id/button_add_to_list"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:background="#08AE9E"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>
