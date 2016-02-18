@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +21,9 @@ public class HowTo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_how_to);
+
+        TextView title = (TextView) findViewById(R.id.TextView_list_header);
+        title.setText("How To ?");
 
         recyclerview = (RecyclerView) findViewById(R.id.recyclerview);
         recyclerview.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
@@ -47,25 +51,6 @@ public class HowTo extends AppCompatActivity {
         */
 
         recyclerview.setAdapter(new ExpandableListAdapter(data));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
     @Override
@@ -90,5 +75,4 @@ public class HowTo extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

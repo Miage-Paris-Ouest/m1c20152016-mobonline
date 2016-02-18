@@ -1,5 +1,6 @@
 package fr.p10.miage.m1.myapplication.model;
 
+
 /**
  * Created by adrie_000 on 13/02/2016.
  */
