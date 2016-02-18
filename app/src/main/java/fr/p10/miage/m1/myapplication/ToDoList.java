@@ -39,6 +39,8 @@ public class ToDoList extends AppCompatActivity {
         ToDo td;
         td = new ToDo("pizza", 0);
         als.add(td);
+        als.add( new ToDo("pizza", 0));
+        als.add( new ToDo("pizza", 1));
         adapter = new CustomAdapter(this, als);
         lv.setAdapter(adapter);
 
@@ -68,10 +70,13 @@ public class ToDoList extends AppCompatActivity {
                                         // get user input and set it to result
                                         // edit text
                                         String txt = userInput.getText().toString();
+
                                         ToDo td;
                                         td = new ToDo(txt, 0);
                                         als.add(td);
                                         lv.setAdapter(adapter);
+
+
                                     }
                                 })
                         .setNegativeButton("Cancel",
