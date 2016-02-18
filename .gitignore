@@ -13,27 +13,19 @@ build/
 !.idea/codeStyleSettings.xml
 .idea/**/*
 
-# Netbeans for WebSite
-
-/ADMIN_WEB_SITE/NanterasmusWebApplication/nbproject/project.properties
-/ADMIN_WEB_SITE/NanterasmusWebApplication/nbproject/private/
 
 # Mac OS
 
 .DS_Store
 /captures
+
+
+# Project ignore
 /ADMIN_WEB_SITE/NanterasmusWEB/nbproject/private/
 /ADMIN_WEB_SITE/NanterasmusWEB/NanterasmusWEB-war/nbproject/private/
 /ADMIN_WEB_SITE/NanterasmusWEB/NanterasmusWEB-ejb/nbproject/private/
 /ADMIN_WEB_SITE/HelloWorld/nbproject/private/
-/CustomerDB/nbproject/private/
-/Calculator/CalculatorApp/nbproject/private/
-/Calculator/CalculatorClientApp/nbproject/private/
-/MessageBoard/nbproject/private/
-/mavenproject1/NanterasmusWEB/target/
-/NanterasmusWEB/target/
 /ADMIN_WEB_SITE/NanterasmusWEB/target/
-/NanterasmusWEB2/target/
-/ADMIN_WEB_SITE/NanterasmusWEB2/target/
-/ADMIN_WEB_SITE/NanterasmusWEB3/target/
 /ADMIN_WEB_SITE/NanterasmusREST/target/
+/ADMIN_WEB_SITE/NanterasmusWebApplication/nbproject/project.properties
+/ADMIN_WEB_SITE/NanterasmusWEB/src/main/resources/com/myapp/struts/dbRessource.properties
