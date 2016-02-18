@@ -15,6 +15,7 @@ import java.util.List;
 
 // TESTING CLICKABLE TEXTVIEW
 import fr.p10.miage.m1.myapplication.Accueil;
+import fr.p10.miage.m1.myapplication.HowToPages;
 import fr.p10.miage.m1.myapplication.R;
 
 public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
@@ -42,7 +43,7 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                 return header;
             case CHILD:
 
-                TextView itemTextView = new TextView(context);
+                final TextView itemTextView = new TextView(context);
 
                 // TESTING CLICABLE TEXTVIEW
                 itemTextView.setOnClickListener(new View.OnClickListener() {
@@ -50,10 +51,10 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                     @Override
                     public void onClick(View v) {
                         Context context = parent.getContext();
-                        Intent intent = new Intent(context,Accueil.class)
+                        Intent intent = new Intent(context,HowToPages.class)
                                 .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.putExtra("title_how_to",itemTextView.getText());
                         context.startActivity(intent);
-
                     }
                 });
 
