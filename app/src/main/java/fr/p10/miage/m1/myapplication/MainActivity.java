@@ -5,6 +5,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import fr.p10.miage.m1.myapplication.model.Communicator;
+import fr.p10.miage.m1.myapplication.model.JsonData;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -12,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        new Communicator().execute("http://10.0.2.2:8080/NanterasmusWEB/REST/user/connect.json?username=flo&password=flo123");
+
     }
 
 

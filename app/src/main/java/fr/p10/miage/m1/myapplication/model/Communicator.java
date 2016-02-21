@@ -1,5 +1,6 @@
 package fr.p10.miage.m1.myapplication.model;
 
+import android.os.AsyncTask;
 import android.util.Log;
 
 import org.apache.http.HttpResponse;
@@ -7,6 +8,8 @@ import org.apache.http.params.CoreProtocolPNames;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 import java.io.BufferedReader;
@@ -18,7 +21,10 @@ import java.net.*;
 /**
  * Created by adrie_000 on 18/02/2016.
  */
-public class Communicator {
+public class Communicator extends AsyncTask<String,String,String> {
+
+
+
     public String executeHttpGet(String URL) throws Exception
     {
         BufferedReader in = null;
@@ -58,6 +64,34 @@ public class Communicator {
                     Log.d("BBB", e.toString());
                 }
             }
+        }
+    }
+
+
+    @Override
+    protected String doInBackground(String[] params) {
+        try {
+            return executeHttpGet((String) params[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    protected void onPostExecute(String page)
+    {
+        try {
+            JSONObject parentObject = new JSONObject(page);
+
+            //And then read attributes like
+            String last_name = parentObject.getString("last_name");
+            String first_name = parentObject.getString("first_name");
+            String email = parentObject.getString("email");
+            String status = parentObject.getString("status");
+
+        } catch (JSONException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
 }
