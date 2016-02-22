@@ -23,7 +23,7 @@ import java.net.*;
  */
 public class Communicator extends AsyncTask<String,String,String> {
 
-
+    public AsyncResponse delegate=null;
 
     public String executeHttpGet(String URL) throws Exception
     {
@@ -78,20 +78,9 @@ public class Communicator extends AsyncTask<String,String,String> {
         return null;
     }
 
+    @Override
     protected void onPostExecute(String page)
     {
-        try {
-            JSONObject parentObject = new JSONObject(page);
-
-            //And then read attributes like
-            String last_name = parentObject.getString("last_name");
-            String first_name = parentObject.getString("first_name");
-            String email = parentObject.getString("email");
-            String status = parentObject.getString("status");
-
-        } catch (JSONException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+       delegate.processFinish(page);
     }
 }
