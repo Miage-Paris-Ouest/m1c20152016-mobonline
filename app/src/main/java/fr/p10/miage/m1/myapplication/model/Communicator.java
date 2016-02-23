@@ -1,5 +1,6 @@
 package fr.p10.miage.m1.myapplication.model;
 
+import android.os.AsyncTask;
 import android.util.Log;
 
 import org.apache.http.HttpResponse;
@@ -7,6 +8,8 @@ import org.apache.http.params.CoreProtocolPNames;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 import java.io.BufferedReader;
@@ -18,7 +21,10 @@ import java.net.*;
 /**
  * Created by adrie_000 on 18/02/2016.
  */
-public class Communicator {
+public class Communicator extends AsyncTask<String,String,String> {
+
+    public AsyncResponse delegate=null;
+
     public String executeHttpGet(String URL) throws Exception
     {
         BufferedReader in = null;
@@ -59,5 +65,22 @@ public class Communicator {
                 }
             }
         }
+    }
+
+
+    @Override
+    protected String doInBackground(String[] params) {
+        try {
+            return executeHttpGet((String) params[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    protected void onPostExecute(String page)
+    {
+       delegate.processFinish(page);
     }
 }
