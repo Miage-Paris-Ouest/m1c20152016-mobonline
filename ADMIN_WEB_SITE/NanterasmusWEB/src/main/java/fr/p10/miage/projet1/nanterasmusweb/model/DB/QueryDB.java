@@ -1,6 +1,7 @@
 package fr.p10.miage.projet1.nanterasmusweb.model.DB;
 
-
+import fr.p10.miage.projet1.nanterasmusweb.model.University.CategoryPage;
+import fr.p10.miage.projet1.nanterasmusweb.model.University.UniversityData;
 import fr.p10.miage.projet1.nanterasmusweb.model.person.Admin;
 import fr.p10.miage.projet1.nanterasmusweb.model.person.Personne;
 import fr.p10.miage.projet1.nanterasmusweb.model.person.SuperAdmin;
@@ -113,10 +114,10 @@ public final class QueryDB {
             if (res.next()){
                 if(res.getInt("STATUS_ID")==1)
                     return new SuperAdmin(formLogin,res.getString("PERSON_FIRST_NAME"),
-                            res.getString("PERSON_LAST_NAME"),res.getString("USER_ID"),res.getString("PERSON_MAIL"));
+                            res.getString("PERSON_LAST_NAME"),res.getString("USER_ID"),res.getString("PERSON_MAIL"),res.getInt("UNIVERSITY"));
                 else // -> STATUS_ID==2
                     return new Admin(formLogin,res.getString("PERSON_FIRST_NAME"),
-                            res.getString("PERSON_LAST_NAME"),res.getString("USER_ID"),res.getString("PERSON_MAIL"));
+                            res.getString("PERSON_LAST_NAME"),res.getString("USER_ID"),res.getString("PERSON_MAIL"),res.getInt("UNIVERSITY"));
             }
         } catch (SQLException ex) {
             Logger.getLogger(QueryDB.class.getName()).log(Level.SEVERE, null, ex);
@@ -135,9 +136,49 @@ public final class QueryDB {
         
         res=pStatement.executeQuery();
         if (res.next()) {
-            person=new Personne(res.getString("PERSON_FIRST_NAME"),res.getString("PERSON_LAST_NAME"),res.getString("PERSON_MAIL"));
+            person=new Personne(res.getString("PERSON_FIRST_NAME"),res.getString("PERSON_LAST_NAME"),res.getString("PERSON_MAIL"),res.getInt("UNIVERSITY"));
         }
         return person;
     }
     
+    public UniversityData CheckUniversity (Integer id) throws Exception {
+        UniversityData university=null;
+
+        pStatement = cnx.prepareStatement("SELECT * FROM M1_UNIVERSITIES "
+                    + " WHERE UNIV_ID = ?");
+        pStatement.setInt(1, id);
+        
+        res=pStatement.executeQuery();
+        if (res.next()) {
+            university=new UniversityData(id,res.getString("ADRESSE"),res.getInt("CITY"),res.getString("WEBSITE"));
+        }
+        return university;
+    }
+    
+    public void getParentCategories(UniversityData university) throws Exception
+    {
+        pStatement = cnx.prepareStatement("SELECT * FROM M1_CATEGORIES CAT, M1_CATEGORIES_UNIVERSITY CU " +
+                                                "  WHERE CAT.CATEGORY_ID=CU.PAGE_CATEGORY AND CAT.CATEGORY_PARENT=0 AND CU.UNIVERSITY= ?");
+        pStatement.setInt(1, university.getId());
+        
+        res=pStatement.executeQuery();
+        if (res.next()) {
+            university.addCategory(new CategoryPage(res.getInt("CAT_UNIV_ID"),res.getString("CATEGORY_NAME"),null));
+        }
+    }
+    
+    /*public UniversityData getParentCategories(String id) throws Exception {
+        UniversityData university=null;
+
+        pStatement = cnx.prepareStatement("SELECT * FROM M1_USERS, M1_PERSONS, M1_STATUS "
+                    + " WHERE STATUS = STATUS_ID AND PERSON_ID = PERSON AND USER_LOGIN = ? AND USER_PASSWORD = ?");
+        pStatement.setString(1, login);
+        pStatement.setString(2, pwd);
+        
+        res=pStatement.executeQuery();
+        if (res.next()) {
+            university=new UniversityData(res.getString("PERSON_FIRST_NAME"),res.getString("PERSON_LAST_NAME"),res.getString("PERSON_MAIL"),res.getInt("UNIVERSITY"));
+        }
+        return university;
+    }*/
 }

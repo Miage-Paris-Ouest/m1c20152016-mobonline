@@ -14,6 +14,16 @@ public class Utility {
     public static boolean isNotNull(String txt) {
         return txt != null && txt.trim().length() >= 0 ? true : false;
     }
+    
+    /**
+     * Null check Method
+     * 
+     * @param x
+     * @return
+     */
+    public static boolean isNotNull(Integer x) {
+        return x != null ? true : false;
+    }
  
     /**
      * Method to construct JSON

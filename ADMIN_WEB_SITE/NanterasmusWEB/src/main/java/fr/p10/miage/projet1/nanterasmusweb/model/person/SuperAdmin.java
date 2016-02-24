@@ -15,17 +15,17 @@ public final class SuperAdmin extends Personne{
      * Void constructor of SuperAdmin to be "Beanable".
      */
     public SuperAdmin(){
-        super("","","","");
+        super("","","","",null);
     }
     
-    public SuperAdmin(String login,String prenom,String nom,String superAdminId,String email){
-        super(login,prenom,nom,email);
+    public SuperAdmin(String login,String prenom,String nom,String superAdminId,String email, Integer universityId){
+        super(login,prenom,nom,email,universityId);
         this.status=PersonStatus.SUPERADMIN;
         this.superAdminId=superAdminId;
     }
     
-    public SuperAdmin(String prenom,String nom, String email){
-        super(prenom,nom,email);
+    public SuperAdmin(String prenom,String nom, String email,Integer universityId){
+        super(prenom,nom,email,universityId);
     }
     
     public String getSuperAdminId(){
