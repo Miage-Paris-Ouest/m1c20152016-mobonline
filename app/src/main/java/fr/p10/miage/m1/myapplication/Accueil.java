@@ -75,6 +75,7 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accueil.this,HowTo.class);
+                intent.putExtra("cat_id",categories.get("How To"));
                 startActivity(intent);
 
             }
@@ -86,6 +87,7 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accueil.this,Contact.class);
+                intent.putExtra("cat_id",categories.get("Contact"));
                 startActivity(intent);
 
             }
@@ -97,6 +99,7 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accueil.this,Culture.class);
+                intent.putExtra("cat_id",categories.get("Culture"));
                 startActivity(intent);
 
             }
@@ -108,6 +111,7 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accueil.this, LearnFrench.class);
+                intent.putExtra("cat_id",categories.get("Learning"));
                 startActivity(intent);
 
             }
@@ -119,8 +123,8 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accueil.this,MapPlan.class);
+                intent.putExtra("cat_id",categories.get("Map"));
                 startActivity(intent);
-
             }
 
         });
@@ -130,6 +134,7 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accueil.this, ToDoList.class);
+                intent.putExtra("cat_id",categories.get("To Do List"));
                 startActivity(intent);
 
             }

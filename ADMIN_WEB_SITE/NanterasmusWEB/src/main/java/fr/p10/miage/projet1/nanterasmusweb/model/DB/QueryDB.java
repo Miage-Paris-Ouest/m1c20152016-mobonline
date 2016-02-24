@@ -1,6 +1,7 @@
 package fr.p10.miage.projet1.nanterasmusweb.model.DB;
 
 import fr.p10.miage.projet1.nanterasmusweb.model.University.CategoryPage;
+import fr.p10.miage.projet1.nanterasmusweb.model.University.Page;
 import fr.p10.miage.projet1.nanterasmusweb.model.University.UniversityData;
 import fr.p10.miage.projet1.nanterasmusweb.model.person.Admin;
 import fr.p10.miage.projet1.nanterasmusweb.model.person.Personne;
@@ -12,7 +13,11 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -44,6 +49,8 @@ public final class QueryDB {
      * Prepared statement to request DataBase.
      */
     private PreparedStatement pStatement;
+    
+    private Statement stmt;
     
     /**
      * ResultSet to store result of requests.
@@ -82,6 +89,7 @@ public final class QueryDB {
             
             Class.forName(NOMDRIVER);
             logInDb(props.getProperty("db.USER"), props.getProperty("db.PWD"));
+            stmt = cnx.createStatement();
         } catch (IOException | ClassNotFoundException | SQLException ex) {
             Logger.getLogger(QueryDB.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -167,18 +175,37 @@ public final class QueryDB {
         }
     }
     
-    /*public UniversityData getParentCategories(String id) throws Exception {
-        UniversityData university=null;
+    public void getPagesFromChildCategory(UniversityData university) throws SQLException{
+        int i=0;
+        String sql="SELECT * FROM M1_CATEGORIES_UNIVERSITY CU, M1_PAGES PAG WHERE CU.CAT_UNIV_ID=PAG.PAGE_CAT_UNIV_ID AND CU.CAT_UNIV_ID IN (";
 
-        pStatement = cnx.prepareStatement("SELECT * FROM M1_USERS, M1_PERSONS, M1_STATUS "
-                    + " WHERE STATUS = STATUS_ID AND PERSON_ID = PERSON AND USER_LOGIN = ? AND USER_PASSWORD = ?");
-        pStatement.setString(1, login);
-        pStatement.setString(2, pwd);
+        for(Map.Entry<Integer, CategoryPage> entry : university.getCategories().entrySet()) { 
+             sql+=entry.getKey();
+             if(i++<university.getCategories().size()-1)
+                sql+=",";
+        }
+        sql+=")";
+        System.out.println(sql);
+        res=stmt.executeQuery(sql);
+        
+        while (res.next()) {
+            System.out.println("page_id :"+res.getInt("PAGE_ID")+", title: "+res.getString("PAGE_TITLE")+", content:"+res.getString("PAGE_CONTENT"));
+            university.getCategories().get(res.getInt("CAT_UNIV_ID")).addPage(new Page(res.getInt("PAGE_ID"),res.getString("PAGE_TITLE"),res.getString("PAGE_CONTENT")));   
+        } 
+    }
+    
+    public void getChildrenCategories(UniversityData university, Integer parentId) throws Exception
+    {
+        pStatement = cnx.prepareStatement("SELECT * FROM M1_CATEGORIES CAT, M1_CATEGORIES_UNIVERSITY CU " +
+                                                "  WHERE CAT.CATEGORY_ID=CU.PAGE_CATEGORY AND CAT.CATEGORY_PARENT=? AND CU.UNIVERSITY= ?");
+        pStatement.setInt(1, parentId);
+        pStatement.setInt(2, university.getId());
         
         res=pStatement.executeQuery();
-        if (res.next()) {
-            university=new UniversityData(res.getString("PERSON_FIRST_NAME"),res.getString("PERSON_LAST_NAME"),res.getString("PERSON_MAIL"),res.getInt("UNIVERSITY"));
+        while (res.next()) {
+            university.addCategory(new CategoryPage(res.getInt("CAT_UNIV_ID"),res.getString("CATEGORY_NAME"),new CategoryPage(parentId)));   
         }
-        return university;
-    }*/
+        getPagesFromChildCategory(university);
+    }
+    
 }

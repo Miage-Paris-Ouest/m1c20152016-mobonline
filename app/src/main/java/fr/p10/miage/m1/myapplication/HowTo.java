@@ -13,8 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fr.p10.miage.m1.myapplication.ExpandableList.ExpandableListAdapter;
+import fr.p10.miage.m1.myapplication.model.AsyncResponse;
 
-public class HowTo extends AppCompatActivity {
+public class HowTo extends AppCompatActivity implements AsyncResponse {
     private RecyclerView recyclerview;
 
     @Override
