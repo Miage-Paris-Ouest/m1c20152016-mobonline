@@ -33,9 +33,11 @@ public class CustomAdapter extends ArrayAdapter {
         // TODO Auto-generated method stub
         LayoutInflater inflater = ((Activity) context).getLayoutInflater();
         convertView = inflater.inflate(R.layout.list, parent, false);
-        TextView name = (TextView) convertView.findViewById(R.id.textView);
+        TextView name = (TextView) convertView.findViewById(R.id.to_do_txt);
         CheckBox cb = (CheckBox) convertView.findViewById(R.id.checkBox);
+        TextView date =(TextView) convertView.findViewById(R.id.date);
         name.setText(modelItems.get(position).getName());
+        date.setText(modelItems.get(position).getDate());
 
         if (modelItems.get(position).getValue() == 1)
         {

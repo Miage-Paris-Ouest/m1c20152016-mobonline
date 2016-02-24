@@ -1,6 +1,8 @@
 package fr.p10.miage.m1.myapplication;
 
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,10 +16,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import fr.p10.miage.m1.myapplication.model.CustomAdapter;
 import fr.p10.miage.m1.myapplication.model.ToDo;
@@ -29,18 +34,45 @@ public class ToDoList extends AppCompatActivity {
     CustomAdapter adapter;
     final Context context = this;
 
+    static final int DATE_PICKER_ID = 1111;
+    private int year;
+    private int month;
+    private int day;
+    String dateTxt;
+    //file
+    String[] to_do_list;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_to_do_list);
 
-
         lv = (ListView) findViewById(R.id.listView);
-        ToDo td;
-        td = new ToDo("pizza", 0);
-        als.add(td);
-        als.add( new ToDo("pizza", 0));
-        als.add( new ToDo("pizza", 1));
+
+        TextView date = (TextView) findViewById(R.id.date);
+        final Calendar c = Calendar.getInstance();
+        year = c.get(Calendar.YEAR);
+        month = c.get(Calendar.MONTH);
+        day = c.get(Calendar.DAY_OF_MONTH);
+
+        dateTxt = month+1+"-"+day+"-"+year+" ";
+
+
+        //file
+        to_do_list = getResources().getStringArray(R.array.to_do_list);
+
+
+        for(int i=0;i<to_do_list.length;i++)
+        {
+            als.add( new ToDo(to_do_list[i], 0,dateTxt));
+        }
+
+        //test
+        /*
+        als.add( new ToDo("test1", 0));
+        als.add( new ToDo("test2", 1));
+        */
+
         adapter = new CustomAdapter(this, als);
         lv.setAdapter(adapter);
 
@@ -69,32 +101,47 @@ public class ToDoList extends AppCompatActivity {
                                     public void onClick(DialogInterface dialog, int id) {
                                         // get user input and set it to result
                                         // edit text
-                                        String txt = userInput.getText().toString();
 
-                                        ToDo td;
-                                        td = new ToDo(txt, 0);
-                                        als.add(td);
-                                        lv.setAdapter(adapter);
+                                            String txt = userInput.getText().toString();
+
+                                            DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker);
+                                            day = datePicker.getDayOfMonth();
+                                            month = datePicker.getMonth() + 1;
+                                            year = datePicker.getYear();
+                                            dateTxt = month+"-"+day+"-"+year+" ";
+
+                                            ToDo td;
+                                            td=new ToDo(txt, 0,dateTxt);
+
+                                            als.add(td);
+                                            lv.setAdapter(adapter);
 
 
+                                        }
                                     }
-                                })
-                        .setNegativeButton("Cancel",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        dialog.cancel();
-                                    }
-                                });
 
-                // create alert dialog
-                AlertDialog alertDialog = alertDialogBuilder.create();
+                                    )
+                                            .
 
-                // show it
-                alertDialog.show();
+                                    setNegativeButton("Cancel",
+                                            new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    dialog.cancel();
+                                                }
+                                            }
 
-            }
-        });
+                                    );
+
+                                    // create alert dialog
+                                    AlertDialog alertDialog = alertDialogBuilder.create();
+
+                                    // show it
+                                    alertDialog.show();
+
+                                }
+            });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
