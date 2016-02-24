@@ -162,7 +162,7 @@ public final class QueryDB {
         pStatement.setInt(1, university.getId());
         
         res=pStatement.executeQuery();
-        if (res.next()) {
+        while (res.next()) {
             university.addCategory(new CategoryPage(res.getInt("CAT_UNIV_ID"),res.getString("CATEGORY_NAME"),null));
         }
     }

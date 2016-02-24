@@ -6,11 +6,13 @@
 package fr.p10.miage.projet1.nanterasmusweb.REST;
 
 import fr.p10.miage.projet1.nanterasmusweb.model.DB.QueryDB;
+import fr.p10.miage.projet1.nanterasmusweb.model.University.CategoryPage;
 import fr.p10.miage.projet1.nanterasmusweb.model.University.UniversityData;
 import fr.p10.miage.projet1.nanterasmusweb.model.person.Personne;
 import fr.p10.miage.projet1.nanterasmusweb.model.util.Utility;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.ws.rs.core.Context;
@@ -23,6 +25,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 /**
  * REST Web Service
@@ -54,13 +58,27 @@ public class University {
         UniversityData university=checkUniversity(universityId);
         if(university != null){
             
-            datas.put("univ_id", university.getId());
+            /*datas.put("univ_id", university.getId());
             datas.put("univ_city", university.getCity());
-            datas.put("univ_website", university.getWebSite());
+            datas.put("univ_website", university.getWebSite());*/
             //datas.put("university", person.getUniversityId());
             try {
                 database.getParentCategories(university);
+                //System.out.println("category:"+university.getCategories());
                 
+                JSONArray jsonA = new JSONArray();
+                for(Entry<Integer, CategoryPage> entry : university.getCategories().entrySet()) {
+                    CategoryPage category = entry.getValue();
+                    JSONObject cat = new JSONObject();
+                    
+                    cat.put("cat_id", category.getId());
+                    cat.put("cat_name", category.getTitle());
+
+                    jsonA.put(cat);
+                }
+                
+                datas.put("categories", jsonA);
+                    
                 response = Utility.constructJSON(datas,true);
             } catch (Exception ex) {
                 response = Utility.constructJSON(datas, false, "No pages found");
