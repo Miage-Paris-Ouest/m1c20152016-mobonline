@@ -41,7 +41,7 @@
             android:label="@string/title_activity_culture"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".Map"
+            android:name=".MapPlan"
             android:label="@string/title_activity_map"
             android:theme="@style/AppTheme" />
         <activity
