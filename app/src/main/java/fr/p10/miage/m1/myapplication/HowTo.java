@@ -28,6 +28,10 @@ public class HowTo extends AppCompatActivity {
         recyclerview = (RecyclerView) findViewById(R.id.recyclerview);
         recyclerview.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
+        // On récupère le nom de notre classe
+        String className = getLocalClassName();
+
+        // On crée notre liste avec les paramètres de notre classe et les informations requises
         List<ExpandableListAdapter.Item> data = new ArrayList<>();
 
         data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "INSCRIPTION"));
@@ -35,22 +39,10 @@ public class HowTo extends AppCompatActivity {
         data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Teaching registration"));
 
         data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "SCHOLARSHIP"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Je sais pas"));
+        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Make a demand"));
 
-
-        //EXEMPLE D'AJOUT DE CATEGORIE AVEC CHILDS
-/*
-        ExpandableListAdapter.Item places = new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "Places");
-        places.invisibleChildren = new ArrayList<>();
-        places.invisibleChildren.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Kerala"));
-        places.invisibleChildren.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Tamil Nadu"));
-        places.invisibleChildren.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Karnataka"));
-        places.invisibleChildren.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Maharashtra"));
-
-        data.add(places);
-        */
-
-        recyclerview.setAdapter(new ExpandableListAdapter(data));
+        // on set notre recyclerview avec les informations des listes qui renvoient sur la page de la classname passée en paramètre
+        recyclerview.setAdapter(new ExpandableListAdapter(data,className));
     }
 
     @Override
