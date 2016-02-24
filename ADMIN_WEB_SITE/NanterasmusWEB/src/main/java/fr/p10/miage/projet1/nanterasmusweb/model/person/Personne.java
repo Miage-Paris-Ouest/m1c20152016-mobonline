@@ -35,6 +35,8 @@ public class Personne {
     
     protected PersonStatus status;
     
+    protected Integer universityId;
+    
     /**
      * Connection to DataBase.
      */
@@ -53,12 +55,13 @@ public class Personne {
      *              person's email
      *
      */
-    public Personne(String login,String prenom,String nom, String email){
+    public Personne(String login,String prenom,String nom, String email, Integer universityId){
         this.login=login;
         this.nom=nom;
         this.prenom=prenom;
         this.email=email;
         this.status=PersonStatus.NOTAVAILABLE;
+        this.universityId=universityId;
         database=new QueryDB();
     }
     
@@ -78,10 +81,11 @@ public class Personne {
      *              person's email
      *
      */
-    public Personne(String prenom,String nom, String email){
+    public Personne(String prenom,String nom, String email, Integer universityId){
         this.nom=nom;
         this.prenom=prenom;
         this.email= email;
+        this.universityId=universityId;
     }
     
     /**
@@ -122,5 +126,9 @@ public class Personne {
     
     public PersonStatus getStatus(){
         return this.status;
+    }
+    
+    public Integer getUniversityId() {
+        return universityId;
     }
 }

@@ -6,10 +6,13 @@
 package fr.p10.miage.projet1.nanterasmusweb.REST;
 
 import fr.p10.miage.projet1.nanterasmusweb.model.DB.QueryDB;
+import fr.p10.miage.projet1.nanterasmusweb.model.University.UniversityData;
 import fr.p10.miage.projet1.nanterasmusweb.model.person.Personne;
 import fr.p10.miage.projet1.nanterasmusweb.model.util.Utility;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
@@ -26,8 +29,8 @@ import javax.ws.rs.core.MediaType;
  *
  * @author florian
  */
-@Path("user")
-public class User {
+@Path("university")
+public class University {
 
     @Context
     private UriInfo context;
@@ -37,29 +40,33 @@ public class User {
     /**
      * Creates a new instance of Login
      */
-    public User() {
+    public University() {
         database=new QueryDB();
     }
     
     @GET
-    // Path: http://localhost/<appln-folder-name>/login/dologin
-    @Path("/connect.json")
+    @Path("/pages/parents.json")
     // Produces JSON as response
     @Produces(MediaType.APPLICATION_JSON) 
-    // Query parameters are parameters: http://localhost/<appln-folder-name>/login/dologin?username=abc&password=xyz
-    public String doLogin(@QueryParam("username") String uname, @QueryParam("password") String pwd){
+    public String getPages(@QueryParam("university") Integer universityId){
         Map<String, Object> datas=new HashMap<String,Object>();
         String response = "";
-        Personne person=checkCredentials(uname, pwd);
-        if(person != null){
-            datas.put("first_name", person.getPrenom());
-            datas.put("last_name", person.getNom());
-            datas.put("email", person.getEmail());
-            datas.put("university", person.getUniversityId());
+        UniversityData university=checkUniversity(universityId);
+        if(university != null){
             
-            response = Utility.constructJSON(datas,true);
+            datas.put("univ_id", university.getId());
+            datas.put("univ_city", university.getCity());
+            datas.put("univ_website", university.getWebSite());
+            //datas.put("university", person.getUniversityId());
+            try {
+                database.getParentCategories(university);
+                
+                response = Utility.constructJSON(datas,true);
+            } catch (Exception ex) {
+                response = Utility.constructJSON(datas, false, "No pages found");
+            }
         }else{
-            response = Utility.constructJSON(datas, false, "Incorrect Login or Password");
+            response = Utility.constructJSON(datas, false, "Incorrect Id of university");
         }
     return response;        
     }
@@ -71,15 +78,15 @@ public class User {
      * @param pwd
      * @return
      */
-    private Personne checkCredentials(String uname, String pwd){
-        Personne person=null;
-        if(Utility.isNotNull(uname) && Utility.isNotNull(pwd)){
+    private UniversityData checkUniversity(Integer universityId){
+        UniversityData university=null;
+        if(Utility.isNotNull(universityId)){
             try {
-                person = database.checkLogin(uname, pwd);
+                university = database.CheckUniversity(universityId);
             } catch (Exception e) {
-                person=null;
+                university=null;
             }
         }
-        return person;
+        return university;
     }
 }

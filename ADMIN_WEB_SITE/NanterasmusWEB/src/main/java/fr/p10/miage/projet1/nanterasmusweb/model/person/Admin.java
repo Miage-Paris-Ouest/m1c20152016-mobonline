@@ -15,18 +15,18 @@ public final class Admin extends Personne {
      * Void constructor of Admin to be "Beanable".
      */
     public Admin(){
-        super("","","","");
+        super("","","","",null);
         adminId="";
     }
     
-    public Admin(String login,String prenom,String nom,String etudiantId,String email){
-        super(login,prenom,nom,email);
+    public Admin(String login,String prenom,String nom,String etudiantId,String email,Integer universityId){
+        super(login,prenom,nom,email,universityId);
         this.status=PersonStatus.ADMIN;
         this.adminId=etudiantId;
     }
     
-    public Admin(String prenom,String nom,String etudiantId,String email){
-        super(etudiantId,prenom,nom,email);
+    public Admin(String prenom,String nom,String etudiantId,String email,Integer universityId){
+        super(etudiantId,prenom,nom,email,universityId);
         this.adminId=etudiantId;
     }
     
