@@ -8,7 +8,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Nanterasmus"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".ShareDatas">
         <activity android:name=".MainActivity" />
         <activity
             android:name=".Login"

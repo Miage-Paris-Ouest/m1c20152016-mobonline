@@ -57,9 +57,6 @@ public class Login extends Activity implements AsyncResponse {
         Communicator c = new Communicator();
         c.delegate=this;
         c.execute("http://10.0.2.2:8080/NanterasmusWEB/REST/user/connect.json?username="+email+"&password="+password);
-
-
-
     }
 
     @Override
@@ -96,6 +93,8 @@ public class Login extends Activity implements AsyncResponse {
             if(log)
             {
                 Intent intent = new Intent(this,Accueil.class);
+                ((ShareDatas) getApplicationContext()).univId=parentObject.getInt("university");
+                //intent.putExtra(parentObject.getString("status"));
                 startActivity(intent);
             }
 

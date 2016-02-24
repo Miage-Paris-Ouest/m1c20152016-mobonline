@@ -8,34 +8,57 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 
-public class Accueil extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_accueil);
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
-        addListenerOnButton();
+import fr.p10.miage.m1.myapplication.model.AsyncResponse;
+import fr.p10.miage.m1.myapplication.model.Communicator;
+
+public class Accueil extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener,AsyncResponse {
+
+        private Map<String,Integer> categories;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+
+            Log.i("Univ id= :", "" + ((ShareDatas) getApplicationContext()).univId);
+            initParentPages();
+            setContentView(R.layout.activity_accueil);
+
+            addListenerOnButton();
 
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+            drawer.setDrawerListener(toggle);
+            toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+            NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+            navigationView.setNavigationItemSelectedListener(this);
 
-}
+    }
+
+    public void initParentPages() {
+        Communicator c = new Communicator();
+        c.delegate=this;
+        c.execute("http://10.0.2.2:8080/NanterasmusWEB/REST/university/pages/parents.json?university="+((ShareDatas) getApplicationContext()).univId);
+    }
 
 
     public void addListenerOnButton() {
@@ -95,7 +118,7 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Accueil.this,Map.class);
+                Intent intent = new Intent(Accueil.this,MapPlan.class);
                 startActivity(intent);
 
             }
@@ -148,6 +171,32 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
         }
     }
 
+    @Override
+    public void processFinish(String output) {
+
+        try {
+            JSONObject parentObject = new JSONObject(output);
+
+            String status = parentObject.getString("status");
+            categories=new HashMap<>();
+
+            JSONArray categoriesArray=parentObject.getJSONArray("categories");
+
+            for (int i = 0; i < categoriesArray.length(); i++) {
+                JSONObject jsonobject = categoriesArray.getJSONObject(i);
+
+                categories.put(jsonobject.getString("cat_name"),jsonobject.getInt("cat_id"));
+
+                Log.i("CategoriesParentes !!!","CatName :"+jsonobject.getString("cat_name")+"Cat Id"+jsonobject.getInt("cat_id"));
+            }
+
+        } catch (JSONException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -181,7 +230,7 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
 
         }else if (id == R.id.nav_to_map) {
 
-            Intent intent = new Intent(this, Map.class);
+            Intent intent = new Intent(this, MapPlan.class);
             startActivity(intent);
 
         }else if (id == R.id.nav_to_dolist) {
