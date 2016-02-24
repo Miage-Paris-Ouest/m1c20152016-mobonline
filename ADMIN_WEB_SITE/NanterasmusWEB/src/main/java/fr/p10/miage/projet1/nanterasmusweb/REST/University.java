@@ -120,8 +120,8 @@ public class University {
                         pageJson.put("page_content", page.getContent());
                         jsonA2.put(pageJson);
                     }
+                    cat.put("pages", jsonA2);
                     jsonA.put(cat);
-                    jsonA.put(jsonA2);
                 }
                 datas.put("categories", jsonA);
                     
