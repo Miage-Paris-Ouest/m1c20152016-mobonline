@@ -7,15 +7,14 @@ package fr.p10.miage.m1.myapplication.model;
 public class ToDo {
     String name;
     int value;
+    String date;
 
-    public ToDo(String name, int value){
+    public ToDo(String name, int value,String date){
         this.name = name;
         this.value = value;
+        this.date=date;
     }
-    public String getName(){
-        return this.name;
-    }
-    public int getValue(){
-        return this.value;
-    }
+    public String getName(){return this.name;}
+    public int getValue(){return this.value;}
+    public String getDate(){return this.date;}
 }

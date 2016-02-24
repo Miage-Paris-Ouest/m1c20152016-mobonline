@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="to_do_list">
+        <item>Register</item>
+        <item>Scholarship</item>
+        <item>Social security</item>
+        <item>Housing</item>
+    </string-array>
+</resources>

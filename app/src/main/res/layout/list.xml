@@ -28,11 +28,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:id="@+id/textView"
-        android:layout_marginLeft="75dp"
+        android:text="to_do_txt"
+        android:id="@+id/to_do_txt"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="22dp"
         android:textSize="20dp"
         android:textColor="#6c6c6c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="date"
+        android:id="@+id/date"
+        android:textSize="20dp"
+        android:textColor="#6c6c6c"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="22dp" />
 
 </RelativeLayout>
