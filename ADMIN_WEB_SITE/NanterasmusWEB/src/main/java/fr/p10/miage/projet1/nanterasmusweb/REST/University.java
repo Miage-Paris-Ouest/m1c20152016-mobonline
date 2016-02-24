@@ -7,6 +7,7 @@ package fr.p10.miage.projet1.nanterasmusweb.REST;
 
 import fr.p10.miage.projet1.nanterasmusweb.model.DB.QueryDB;
 import fr.p10.miage.projet1.nanterasmusweb.model.University.CategoryPage;
+import fr.p10.miage.projet1.nanterasmusweb.model.University.Page;
 import fr.p10.miage.projet1.nanterasmusweb.model.University.UniversityData;
 import fr.p10.miage.projet1.nanterasmusweb.model.person.Personne;
 import fr.p10.miage.projet1.nanterasmusweb.model.util.Utility;
@@ -52,7 +53,7 @@ public class University {
     @Path("/pages/parents.json")
     // Produces JSON as response
     @Produces(MediaType.APPLICATION_JSON) 
-    public String getPages(@QueryParam("university") Integer universityId){
+    public String getParentPages(@QueryParam("university") Integer universityId){
         Map<String, Object> datas=new HashMap<String,Object>();
         String response = "";
         UniversityData university=checkUniversity(universityId);
@@ -86,7 +87,52 @@ public class University {
         }else{
             response = Utility.constructJSON(datas, false, "Incorrect Id of university");
         }
-    return response;        
+        return response;        
+    }
+    
+    @GET
+    @Path("/pages/enfants.json")
+    // Produces JSON as response
+    @Produces(MediaType.APPLICATION_JSON) 
+    public String getChildrenPages(@QueryParam("university") Integer universityId,@QueryParam("cat_parent") Integer parentId){
+        Map<String, Object> datas=new HashMap<String,Object>();
+        String response = "";
+        UniversityData university=checkUniversity(universityId);
+        if(university != null && parentId != null){
+            
+            try {
+                database.getChildrenCategories(university,parentId);
+                
+                JSONArray jsonA = new JSONArray();
+                for(Entry<Integer, CategoryPage> entry : university.getCategories().entrySet()) {
+                    CategoryPage category = entry.getValue();
+                    JSONObject cat = new JSONObject();
+                    
+                    cat.put("cat_id", category.getId());
+                    cat.put("cat_name", category.getTitle());
+                    
+                    JSONArray jsonA2 = new JSONArray();
+                    for(Entry<Integer, Page> entryPage : category.getPages().entrySet()) {
+                        Page page = entryPage.getValue();
+                        JSONObject pageJson = new JSONObject();
+                        pageJson.put("page_id", page.getId());
+                        pageJson.put("page_title", page.getTitle());
+                        pageJson.put("page_content", page.getContent());
+                        jsonA2.put(pageJson);
+                    }
+                    jsonA.put(cat);
+                    jsonA.put(jsonA2);
+                }
+                datas.put("categories", jsonA);
+                    
+                response = Utility.constructJSON(datas,true);
+            } catch (Exception ex) {
+                response = Utility.constructJSON(datas, false, "No pages found");
+            }
+        }else{
+            response = Utility.constructJSON(datas, false, "Incorrect Id of university or incorrect Parent Cat id");
+        }
+        return response;        
     }
     
     /**

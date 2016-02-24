@@ -5,6 +5,9 @@
  */
 package fr.p10.miage.projet1.nanterasmusweb.model.University;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  * @author florian
@@ -14,11 +17,22 @@ public class CategoryPage {
     private Integer id;
     private String title;
     private CategoryPage parent;
+    private Map<Integer,Page> pages;
     
     public CategoryPage(Integer id, String title, CategoryPage parent) {
         this.id = id;
         this.title = title;
         this.parent = parent;
+        this.pages = new HashMap<Integer,Page>();
+    }
+    
+    public void addPage(Page p){
+        this.pages.put(p.getId(),p);
+    }
+    
+    public CategoryPage(Integer id) {
+        this.id = id;
+        this.pages = new HashMap<Integer,Page>();
     }
 
     public Integer getId() {
@@ -43,6 +57,10 @@ public class CategoryPage {
 
     public void setParent(CategoryPage parent) {
         this.parent = parent;
+    }
+    
+    public Map<Integer, Page> getPages() {
+        return pages;
     }
   
 }

@@ -67,9 +67,5 @@ public class UniversityData {
     public Map<Integer, CategoryPage> getCategories() {
         return categories;
     }
-
-    public void setCategories(Map<Integer, CategoryPage> categories) {
-        this.categories = categories;
-    }
     
 }

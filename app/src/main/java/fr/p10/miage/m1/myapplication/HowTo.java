@@ -15,10 +15,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fr.p10.miage.m1.myapplication.ExpandableList.ExpandableListAdapter;
+<<<<<<< HEAD
 import fr.p10.miage.m1.myapplication.model.ResourceHelper;
 import fr.p10.miage.m1.myapplication.model.ToDo;
+=======
+import fr.p10.miage.m1.myapplication.model.AsyncResponse;
+>>>>>>> aa83107498d1d00c06c9d496ecbb2605b2019b6e
 
-public class HowTo extends AppCompatActivity {
+public class HowTo extends AppCompatActivity implements AsyncResponse {
     private RecyclerView recyclerview;
 
     @Override
