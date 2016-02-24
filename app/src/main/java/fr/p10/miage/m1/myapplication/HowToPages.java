@@ -42,8 +42,7 @@ public class HowToPages extends AppCompatActivity {
 
         // On set les information de la description de notre How To
         TextView textView_description = (TextView) findViewById(R.id.textView_how_to_pages_contentDescription);
-        textView_description.setText(title);
-
+        textView_description.setText("Bla bla bla");
     }
 
     @Override

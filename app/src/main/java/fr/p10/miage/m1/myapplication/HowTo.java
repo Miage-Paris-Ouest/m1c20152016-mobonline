@@ -20,7 +20,7 @@ public class HowTo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_how_to);
+        setContentView(R.layout.activity_expandable_list);
 
         TextView title = (TextView) findViewById(R.id.TextView_list_header);
         title.setText("How To ?");
