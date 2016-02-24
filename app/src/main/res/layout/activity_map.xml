@@ -21,4 +21,13 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:gravity="center_vertical" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/map_img_map"
+        android:src="@drawable/plan_acces"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
