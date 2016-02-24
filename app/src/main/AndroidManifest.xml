@@ -22,7 +22,8 @@
         </activity>
         <activity
             android:name=".Accueil"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity
             android:name=".ToDoList"
             android:theme="@style/AppTheme" />

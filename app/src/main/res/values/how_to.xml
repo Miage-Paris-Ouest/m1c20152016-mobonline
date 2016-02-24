@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <array name="howTo_0">
+            <item>inscription</item>
+            <item>Administrative Register</item>
+            <item>Teaching registration</item>
+        </array>
+
+        <array name="howTo_1">
+            <item>scholarship</item>
+            <item>"Make a demand</item>
+        </array>
+
+
+</resources>

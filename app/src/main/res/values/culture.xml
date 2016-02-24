@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="culture_0">
+        <item>museums</item>
+        <item>Orsay</item>
+        <item>http://www.musee-orsay.fr/en/</item>
+        <item>Louvre</item>
+        <item>http://www.louvre.fr/en/</item>
+    </array>
+
+    <array name="culture_1">
+        <item>monuments</item>
+        <item>"Eiffel Tower</item>
+        <item>http://www.toureiffel.paris/</item>
+        <item>"Arc of Triumph</item>
+        <item>http://arc-de-triomphe.monuments-nationaux.fr/en/</item>
+    </array>
+</resources>

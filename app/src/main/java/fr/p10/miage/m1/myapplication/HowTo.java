@@ -1,10 +1,12 @@
 package fr.p10.miage.m1.myapplication;
 
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -13,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fr.p10.miage.m1.myapplication.ExpandableList.ExpandableListAdapter;
+import fr.p10.miage.m1.myapplication.model.ResourceHelper;
+import fr.p10.miage.m1.myapplication.model.ToDo;
 
 public class HowTo extends AppCompatActivity {
     private RecyclerView recyclerview;
@@ -33,13 +37,24 @@ public class HowTo extends AppCompatActivity {
 
         // On crée notre liste avec les paramètres de notre classe et les informations requises
         List<ExpandableListAdapter.Item> data = new ArrayList<>();
+        
+        for (TypedArray item : ResourceHelper.getMultiTypedArray(this, "howTo"))
+        {
 
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "INSCRIPTION"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Administrative Register"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Teaching registration"));
+            for(int i=0;i<item.length();i++)
+            {
+                if (i == 0)
+                {
+                    data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, item.getString(i)));
+                }
+                else
+                {
+                    data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, item.getString(i)));
+                }
+            }
 
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "SCHOLARSHIP"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Make a demand"));
+        }
+
 
         // on set notre recyclerview avec les informations des listes qui renvoient sur la page de la classname passée en paramètre
         recyclerview.setAdapter(new ExpandableListAdapter(data,className));

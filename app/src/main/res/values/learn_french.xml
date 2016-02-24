@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="learnFrench_0">
+        <item>Keywords</item>
+        <item>Bonjour</item>
+        <item>Hello</item>
+        <item>Au revoir</item>
+        <item>Bye</item>
+    </array>
+
+    <array name="learnFrench_1">
+        <item>Common phrases</item>
+        <item>"Ou se trouve le rstaurant?</item>
+        <item>Where is the restaurant?</item>
+        <item>"Ou sont les toillettes?</item>
+        <item>Where are the toilets?</item>
+    </array>
+
+</resources>

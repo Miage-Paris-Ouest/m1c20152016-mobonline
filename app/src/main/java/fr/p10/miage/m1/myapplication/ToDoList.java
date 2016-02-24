@@ -11,6 +11,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,7 +35,6 @@ public class ToDoList extends AppCompatActivity {
     CustomAdapter adapter;
     final Context context = this;
 
-    static final int DATE_PICKER_ID = 1111;
     private int year;
     private int month;
     private int day;
@@ -104,14 +104,17 @@ public class ToDoList extends AppCompatActivity {
 
                                             String txt = userInput.getText().toString();
 
+                                            //datePicke est null
+                                            /*
                                             DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker);
                                             day = datePicker.getDayOfMonth();
+                                            Log.w("className ERROR"," jour : " + day);
                                             month = datePicker.getMonth() + 1;
                                             year = datePicker.getYear();
                                             dateTxt = month+"-"+day+"-"+year+" ";
+                                            */
 
-                                            ToDo td;
-                                            td=new ToDo(txt, 0,dateTxt);
+                                            ToDo td=new ToDo(txt, 0,dateTxt);
 
                                             als.add(td);
                                             lv.setAdapter(adapter);

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="contact_0">
+        <item>register</item>
+        <item>administrative</item>
+        <item>bru.veraldi@hotmail.fr</item>
+        <item>pedagogique</item>
+        <item>bru.veraldi@hotmail.fr</item>
+    </array>
+
+    <array name="contact_1">
+        <item>scholarship</item>
+        <item>"Jean dupuit</item>
+        <item>bru.veraldi@hotmail.fr</item>
+    </array>
+
+
+
+</resources>

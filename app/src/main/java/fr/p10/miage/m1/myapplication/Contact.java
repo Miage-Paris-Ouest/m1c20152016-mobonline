@@ -1,6 +1,7 @@
 package fr.p10.miage.m1.myapplication;
 
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fr.p10.miage.m1.myapplication.ExpandableList.ExpandableListAdapter;
+import fr.p10.miage.m1.myapplication.model.ResourceHelper;
 
 public class Contact extends AppCompatActivity {
     private RecyclerView recyclerview;
@@ -33,13 +35,24 @@ public class Contact extends AppCompatActivity {
         // On crée notre liste avec les paramètres de notre classe et les informations requises
         List<ExpandableListAdapter.Item> data = new ArrayList<>();
 
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "REGISTER"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Administrative","bru.veraldi@hotmail.fr"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "Pedagogique","bru.veraldi@hotmail.fr"));
+        for (TypedArray item : ResourceHelper.getMultiTypedArray(this, "contact"))
+        {
 
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "SCHOLARSHIP"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "JEAN","bru.veraldi@hotmail.fr"));
+            for(int i=0;i<item.length();i++)
+            {
+                if (i == 0)
+                {
+                    data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, item.getString(i)));
+                }
+                else
+                {
+                    data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, item.getString(i),item.getString(i+1)));
+                    i++;
+                }
 
+            }
+
+        }
 
         // on set notre recyclerview avec les informations des listes qui renvoient sur la page de la classname passée en paramètre
         recyclerview.setAdapter(new ExpandableListAdapter(data,className));
