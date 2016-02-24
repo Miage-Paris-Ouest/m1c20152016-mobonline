@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,9 +23,11 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
     public static final int HEADER = 0;
     public static final int CHILD = 1;
     private List<Item> data;
+    private String myClassName;
 
-    public ExpandableListAdapter(List<Item> data) {
+    public ExpandableListAdapter(List<Item> data, String className) {
         this.data = data;
+        this.myClassName = className;
     }
 
     @Override
@@ -42,7 +45,6 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                 ListHeaderViewHolder header = new ListHeaderViewHolder(view);
                 return header;
             case CHILD:
-
                 final TextView itemTextView = new TextView(context);
 
                 // TESTING CLICABLE TEXTVIEW
@@ -51,10 +53,29 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                     @Override
                     public void onClick(View v) {
                         Context context = parent.getContext();
-                        Intent intent = new Intent(context,HowToPages.class)
+
+                        Class<?> c = null;
+                        String concatMyClassName = "fr.p10.miage.m1.myapplication."+myClassName+"Pages";
+                        Log.w("GIRAFE", context+" : "+concatMyClassName);
+
+                        try {
+                            c= Class.forName(concatMyClassName);
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                            Log.w("PONEY ERROR", context + " : " + c);
+                        }
+                        Log.w("PONEY", context+" : "+c);
+
+                        Intent intent = new Intent(context,c)
                                 .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        //Intent intent = new Intent(context, c);
                         intent.putExtra("title_how_to",itemTextView.getText());
                         context.startActivity(intent);
+
+
+
+
+
                     }
                 });
 
