@@ -3,7 +3,9 @@ package fr.p10.miage.m1.myapplication.ExpandableList;
 import android.content.Context;
 import android.content.Intent;
 
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,9 +24,11 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
     public static final int HEADER = 0;
     public static final int CHILD = 1;
     private List<Item> data;
+    private String myClassName;
 
-    public ExpandableListAdapter(List<Item> data) {
+    public ExpandableListAdapter(List<Item> data, String className) {
         this.data = data;
+        this.myClassName = className;
     }
 
     @Override
@@ -42,7 +46,6 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                 ListHeaderViewHolder header = new ListHeaderViewHolder(view);
                 return header;
             case CHILD:
-
                 final TextView itemTextView = new TextView(context);
 
                 // TESTING CLICABLE TEXTVIEW
@@ -51,10 +54,40 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                     @Override
                     public void onClick(View v) {
                         Context context = parent.getContext();
-                        Intent intent = new Intent(context,HowToPages.class)
-                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        intent.putExtra("title_how_to",itemTextView.getText());
-                        context.startActivity(intent);
+
+                        Class<?> c = null;
+                        String concatMyClassName = "fr.p10.miage.m1.myapplication."+myClassName+"Pages";
+                        Log.w("GIRAFE", context + " : " + concatMyClassName);
+
+                        try {
+                            c= Class.forName(concatMyClassName);
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                            Log.w("className ERROR", context + " : " + c);
+                        }
+
+                        if(myClassName.equalsIgnoreCase("Culture")){
+                            for(Item item:data) {
+                                if (item.link != null) {
+                                    if (itemTextView.getText().equals(item.text)) {
+                                        Log.w("CHARLIEEEE5", " : " + item.link);
+                                        Uri uri = Uri.parse(item.link);
+                                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                                        context.startActivity(intent);
+                                    }
+                                }
+                            }
+                        }else if(myClassName.equalsIgnoreCase("HowTo")){
+                            Intent intent = new Intent(context,c)
+                                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            intent.putExtra("title_how_to",itemTextView.getText());
+                            context.startActivity(intent);
+                        }else if(myClassName.equalsIgnoreCase("Contact")){
+                            Intent intent = new Intent(context,c)
+                                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            intent.putExtra("title_how_to",itemTextView.getText());
+                            context.startActivity(intent);
+                        }
                     }
                 });
 
@@ -141,6 +174,7 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
     public static class Item {
         public int type;
         public String text;
+        public String link;
         public List<Item> invisibleChildren;
 
         public Item() {
@@ -149,6 +183,11 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
         public Item(int type, String text) {
             this.type = type;
             this.text = text;
+        }
+        public Item(int type, String text, String link) {
+            this.type = type;
+            this.text = text;
+            this.link = link;
         }
     }
 }
