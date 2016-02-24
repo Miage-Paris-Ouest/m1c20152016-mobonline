@@ -19,7 +19,7 @@ import fr.p10.miage.m1.myapplication.ExpandableList.ExpandableListAdapter;
 import fr.p10.miage.m1.myapplication.model.ResourceHelper;
 
 
-public class HowTo extends AppCompatActivity implements AsyncResponse {
+public class HowTo extends AppCompatActivity {
     private RecyclerView recyclerview;
 
     @Override
