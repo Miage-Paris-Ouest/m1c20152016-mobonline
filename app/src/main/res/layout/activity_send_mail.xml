@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp" tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView6"
+        android:background="#FEA347" />
+
+    <TextView
+        android:text="SEND MAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mail to : "
+        android:id="@+id/mail_mailto"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/imageView6"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Subject : "
+        android:id="@+id/mail_subject"
+        android:layout_below="@+id/mail_mailto"
+        android:layout_alignLeft="@+id/mail_mailto"
+        android:layout_alignStart="@+id/mail_mailto"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Message : "
+        android:id="@+id/mail_message"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/mail_subject"
+        android:layout_alignStart="@+id/mail_subject" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail_c_mailto"
+        android:layout_above="@+id/mail_subject"
+        android:layout_toRightOf="@+id/mail_message"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail_c_subject"
+        android:layout_alignBottom="@+id/mail_subject"
+        android:layout_alignRight="@+id/mail_c_mailto"
+        android:layout_alignEnd="@+id/mail_c_mailto"
+        android:layout_alignLeft="@+id/mail_c_mailto"
+        android:layout_alignStart="@+id/mail_c_mailto" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/mail_c_message"
+        android:layout_alignBottom="@+id/mail_message"
+        android:layout_alignLeft="@+id/mail_c_subject"
+        android:layout_alignStart="@+id/mail_c_subject"
+        android:layout_alignRight="@+id/mail_c_subject"
+        android:layout_alignEnd="@+id/mail_c_subject" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/mail_btn_send"
+        android:layout_marginTop="77dp"
+        android:layout_below="@+id/mail_c_message"
+        android:layout_centerHorizontal="true"
+        android:width="150dp" />
+
+</RelativeLayout>

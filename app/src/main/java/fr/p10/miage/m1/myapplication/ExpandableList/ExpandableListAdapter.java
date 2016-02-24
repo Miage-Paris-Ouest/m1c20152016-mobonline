@@ -16,9 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 // TESTING CLICKABLE TEXTVIEW
-import fr.p10.miage.m1.myapplication.Accueil;
-import fr.p10.miage.m1.myapplication.HowToPages;
 import fr.p10.miage.m1.myapplication.R;
+import fr.p10.miage.m1.myapplication.SendMail;
 
 public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     public static final int HEADER = 0;
@@ -48,7 +47,6 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
             case CHILD:
                 final TextView itemTextView = new TextView(context);
 
-                // TESTING CLICABLE TEXTVIEW
                 itemTextView.setOnClickListener(new View.OnClickListener() {
 
                     @Override
@@ -57,7 +55,6 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
                         Class<?> c = null;
                         String concatMyClassName = "fr.p10.miage.m1.myapplication."+myClassName+"Pages";
-                        Log.w("GIRAFE", context + " : " + concatMyClassName);
 
                         try {
                             c= Class.forName(concatMyClassName);
@@ -70,7 +67,6 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                             for(Item item:data) {
                                 if (item.link != null) {
                                     if (itemTextView.getText().equals(item.text)) {
-                                        Log.w("CHARLIEEEE5", " : " + item.link);
                                         Uri uri = Uri.parse(item.link);
                                         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                                         context.startActivity(intent);
@@ -83,10 +79,17 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                             intent.putExtra("title_how_to",itemTextView.getText());
                             context.startActivity(intent);
                         }else if(myClassName.equalsIgnoreCase("Contact")){
-                            Intent intent = new Intent(context,c)
-                                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            intent.putExtra("title_how_to",itemTextView.getText());
-                            context.startActivity(intent);
+                            for(Item item:data) {
+                                if (item.link != null) {
+                                    if (itemTextView.getText().equals(item.text)) {
+                                        String mailto = item.link;
+                                        Intent intent = new Intent(context, SendMail.class)
+                                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        intent.putExtra("mail_to",mailto);
+                                        context.startActivity(intent);
+                                    }
+                                }
+                            }
                         }
                     }
                 });

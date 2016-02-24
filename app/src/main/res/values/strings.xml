@@ -25,6 +25,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_send_mail">SendMail</string>
 
 
 </resources>
