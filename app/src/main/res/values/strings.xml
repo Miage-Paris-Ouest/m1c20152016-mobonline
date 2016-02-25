@@ -2,7 +2,7 @@
     <string name="app_name">StudyAtNanterre</string>
 
     <string name="action_profile">Profile</string>
-    <string name="title_activity_login">Login</string>
+    <string name="title_activity_login">Nanterasmus</string>
     <string name="title_activity_accueil">Accueil</string>
     <string name="title_activity_to_do_list">ToDoList</string>
     <string name="title_activity_how_to">HowTo</string>
