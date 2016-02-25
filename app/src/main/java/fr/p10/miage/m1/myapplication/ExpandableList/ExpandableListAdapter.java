@@ -74,10 +74,17 @@ public class ExpandableListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                                 }
                             }
                         }else if(myClassName.equalsIgnoreCase("HowTo")){
-                            Intent intent = new Intent(context,c)
-                                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            intent.putExtra("title_how_to",itemTextView.getText());
-                            context.startActivity(intent);
+                            for(Item item:data) {
+                                if (item.link != null) {
+                                    if (itemTextView.getText().equals(item.text)) {
+                                        Intent intent = new Intent(context, c)
+                                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        intent.putExtra("title_how_to", itemTextView.getText());
+                                        intent.putExtra("content_how_to", item.link);
+                                        context.startActivity(intent);
+                                    }
+                                }
+                            }
                         }else if(myClassName.equalsIgnoreCase("Contact")){
                             for(Item item:data) {
                                 if (item.link != null) {

@@ -16,7 +16,7 @@ public class HowToPages extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String title ="";
+        String title ="",content="";
         String content_description = "";
 
         Bundle extras = getIntent().getExtras();
@@ -26,6 +26,7 @@ public class HowToPages extends AppCompatActivity {
 
             //---------Récupère informations------------
              title = extras.getString("title_how_to");
+             content = extras.getString("content_how_to");
 
         }
         // On récupère notre layout
@@ -42,7 +43,7 @@ public class HowToPages extends AppCompatActivity {
 
         // On set les information de la description de notre How To
         TextView textView_description = (TextView) findViewById(R.id.textView_how_to_pages_contentDescription);
-        textView_description.setText("Bla bla bla");
+        textView_description.setText(content);
     }
 
     @Override
