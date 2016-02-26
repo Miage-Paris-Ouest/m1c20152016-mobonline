@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mobonline.svg?branch=master)](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mobonline)
-[![Build Status](https://www.bitrise.io/app/b8e29b159097b3aa.svg?token=-r6AHWMQwkUwy5rsRsW4Kw&branch=master)](https://www.bitrise.io/app/b8e29b159097b3aa)
+[![Build Status](https://www.bitrise.io/app/7cc3309433bce2bd.svg?token=WaGTybCNGhSIs-4xaGABSQ&branch=master)](https://www.bitrise.io/app/7cc3309433bce2bd)
 # m1c20152016-mobonline
 Dépôt de Bruno Veraldi, Adrien Dos Santos, Florian Roy
 
@@ -90,17 +90,9 @@ Les étudiants utilisent une application android et les administrateurs un porta
 |**Use Case Student :**</br>![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase/StudentUseCase.png "Use case")|
 |**Use Case Admin :**</br> ![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase/AdminUseCase.png "Use case")|
 
-* Diagramme de séquences
-
-|StudentSequence|NanterreUniversityAdmin|UniversityAdmin|
-|:---:|:---:|:---:|
-|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/Sequence/StudentSequence.png "StudentSequence")|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/Sequence/NanterreUniversityAdmin.png "NanterreUniversityAdmin")|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/Sequence/UniversityAdmin.png "UniversityAdmin")|
-
-
-* Diagramme de classe
-
-|NantErasmus|
-|:---:|
-|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/Classe/NantErasmus.png "Diagramme de classe")|
-
-
+# Liens utiles :
+- [Prototype de l'application mobile] (https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/tree/master/PROTOTYPE "Prototype")
+- [Technique (Technologies utilisées et Diagramme de séquence)] (https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/tree/master/TECHNIQUE "Technique")
+- [Manuel Utilisateur] (https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/tree/master/MANUEL_UTILISATEUR "Manuel utilisateur")
+- [Base de Données (Schéma de la base et SQL pour construire la base)] (https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/tree/master/DATABASE "BDD")
+- [Application WEB - WebServices] (https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/tree/master/ADMIN_WEB_SITE "WebServices")

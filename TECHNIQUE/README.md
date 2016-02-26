@@ -1,7 +1,5 @@
 [![Build Status](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mobonline.svg?branch=master)](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mobonline)
-[![Build Status](https://www.bitrise.io/app/b8e29b159097b3aa.svg?token=-r6AHWMQwkUwy5rsRsW4Kw&branch=master)](https://www.bitrise.io/app/b8e29b159097b3aa)
-[![Coverage Status](https://coveralls.io/github/Miage-Paris-Ouest/froy/badge.svg?branch=master&service=github)](https://coveralls.io/github/Miage-Paris-Ouest/froy?branch=master)
-[![SonarQube Technical Debt](https://img.shields.io/badge/technical%20debt-0.0%-brightgreen.svg)](http://localhost:9000/dashboard/index/fr.uparis10.pascalpoizat:template-java-project)
+[![Build Status](https://www.bitrise.io/app/7cc3309433bce2bd.svg?token=WaGTybCNGhSIs-4xaGABSQ&branch=master)](https://www.bitrise.io/app/7cc3309433bce2bd)
 # m1c20152016-mobonline
 Dépôt de Bruno Veraldi, Adrien Dos Santos, Florian Roy
 
@@ -10,8 +8,9 @@ Dépôt de Bruno Veraldi, Adrien Dos Santos, Florian Roy
 
 Notre application Nanterasmus, est une application mobile fonctionnant sous android.
 Une application web d'administration sera développée afin de permettre aux universités de proposer du contenu dynamique aux étudiants en Erasmus.
-Dans l'objectif de développer ces applications nous avons utilisés les environnements suivants:
+L'application Web fournit aussi des webservices permettant à l'application d'avoir des données dynamiques cherchées dans une base qui est requêtée par le serveur.
 
+Dans l'objectif de développer ces applications nous avons utilisés les environnements suivants:
 
 ### Environnement de développement:
 * Utilisation du JAVA pour le développement de l’application sous android.
@@ -21,7 +20,7 @@ l’implémentation des différentes fonctionnalité se fera par la création d’activi
 
 ### Environnement matériel :
 **Ordinateurs utilisés :**
-* 3 Ordinateurs windows 
+* 3 Ordinateurs windows 8 et 10
 
 **Smartphones physiques de tests :**
 * Samsung Galaxy S5
@@ -39,11 +38,9 @@ Création du prototype de l'application représentant les différentes vues de l'ap
 
 **Serveur :**
 * Base de données :
-	Struts un framework MVC pour les applications Web Java.
-	BootStrap un framework pour rendre responsive simplement une application Web, via du HTML5/CSS3 et JS.
+	Oracle
 * Apache
 * Conteneur WEB (pour faire tourner les Servlets Java) :  
-	- Apache Tomcat  
 	- GlassFish Server  
 
 **IDE :**
@@ -75,3 +72,10 @@ Pour la création et modification des ressources graphiques nous avons utilisés l
 * Gimp *(logiciel libre de droit)*
 * Paint
 * Microsoft Office Picture Manager
+
+* Diagramme de séquences
+
+|StudentSequence|NanterreUniversityAdmin|UniversityAdmin|
+|:---:|:---:|:---:|
+|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/Sequence/StudentSequence.png "StudentSequence")|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/Sequence/NanterreUniversityAdmin.png "NanterreUniversityAdmin")|![alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/Sequence/UniversityAdmin.png "UniversityAdmin")|
+
