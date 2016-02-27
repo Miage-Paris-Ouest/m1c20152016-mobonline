@@ -25,13 +25,13 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
     </thead>
     <tbody>
         <tr>
-            <td align="left">
+            <td align="left" width="50%">
 			Au lancement de l’application vous arrivez sur la page de login.</br>
 			Veuillez compléter :</br>
 			&nbsp*	Votre user</br>
 			&nbsp*	Votre mot de passe</br>
 			</td>
-            <td align="center"></td>
+            <td align="center" width="50%"></td>
         </tr>
     </tbody>
 </table>
@@ -44,7 +44,8 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
     </thead>
     <tbody>
         <tr>
-            <td align="left">Après vous être connecté vous arrivez sur la page d’accueil.</br></br>
+            <td align="left" width="50%">
+			Après vous être connecté vous arrivez sur la page d’accueil.</br></br>
 			Sur cette page vous avez accès aux fonctionnalités :</br>
 			&nbsp*	How To</br>
 			&nbsp*	Culture</br>
@@ -68,7 +69,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
     </thead>
     <tbody>
         <tr>
-            <td align="left">Après un clic sur la page d’accueil ou sur le menu latéral vous avez accès à la fonctionnalité How To.</br></br>
+            <td align="left" width="50%">Après un clic sur la page d’accueil ou sur le menu latéral vous avez accès à la fonctionnalité How To.</br></br>
 
 			Cette fonctionnalité vous permet de sélectionner une catégorie spéciale vous redirigeant vers les page d’information liée à celle-ci.
 			</td>
@@ -85,7 +86,8 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
     </thead>
     <tbody>
         <tr>
-            <td align="left">Après un clic sur la page d’accueil ou sur le menu latéral vous avez accès à la fonctionnalité To Do List.</br></br>
+            <td align="left" width="50%">
+			Après un clic sur la page d’accueil ou sur le menu latéral vous avez accès à la fonctionnalité To Do List.</br></br>
 			Cette fonctionnalité vous permet de créer une tache à exécuter et de la valider et préciser une date.
 			</td>
             <td align="center"></td>
@@ -101,7 +103,8 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
     </thead>
     <tbody>
         <tr>
-            <td align="left">Après un clic sur la page d’accueil ou sur le menu latéral vous avez accès à la fonctionnalité Learning French.</br></br>
+            <td align="left" width="50%">
+			Après un clic sur la page d’accueil ou sur le menu latéral vous avez accès à la fonctionnalité Learning French.</br></br>
 			Cette fonctionnalité vous permet d’apprendre les mots clés et les phrases communément utilisé en France avec la traduction dans votre langue.
 			</td>
             <td align="center"></td>
@@ -117,7 +120,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
     </thead>
     <tbody>
         <tr>
-            <td align="left">
+            <td align="left" width="50%">
 			Après un clic sur la page d’accueil ou sur le menu Map.</br></br>
 			Cette fonctionnalité vous permet de mieux vous diriger dans l’enceinte de l’université.
 			</td>
@@ -134,7 +137,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
     </thead>
     <tbody>
         <tr>
-            <td align="left">
+            <td align="left" width="50%">
 			Après un clic sur la page d’accueil ou sur le menu Contact.</br></br>
 			Cette fonctionnalité vous permet de contact les personnes clés et référents en fonction de la catégorie choisie dans une liste.</br></br>
 
