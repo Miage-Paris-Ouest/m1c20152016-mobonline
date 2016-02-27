@@ -20,15 +20,17 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 <table>
     <thead>
         <tr>
-            <th align="center" col=2>###1.	LOGIN</th>
+            <th align="center" col=2>1.	LOGIN</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td align="right">Au lancement de l’application vous arrivez sur la page de login.
-Veuillez compléter :
-*	Votre user
-*	Votre mot de passe</td>
+            <td align="right">
+			Au lancement de l’application vous arrivez sur la page de login.</br>
+			Veuillez compléter :</br>
+			&nbsp*	Votre user
+			&nbsp*	Votre mot de passe
+			</td>
             <td align="center"></td>
         </tr>
     </tbody>
@@ -37,7 +39,7 @@ Veuillez compléter :
 <table>
     <thead>
         <tr>
-            <th align="center" col=2>>###2.	ACCUEIL</</th>
+            <th align="center" col=2>2.	ACCUEIL</</th>
         </tr>
     </thead>
     <tbody>
@@ -66,7 +68,7 @@ Ainsi qu’au menu latéral permettant de se diriger directement vers ces foncti
 <table>
     <thead>
         <tr>
-            <th align="center" col=2>###3.	How To ?</th>
+            <th align="center" col=2>3.	How To ?</th>
         </tr>
     </thead>
     <tbody>
@@ -83,7 +85,7 @@ Cette fonctionnalité vous permet de sélectionner une catégorie spéciale vous
 <table>
     <thead>
         <tr>
-            <th align="center" col=2>###4.	To Do List</th>
+            <th align="center" col=2>4.	To Do List</th>
         </tr>
     </thead>
     <tbody>
@@ -100,7 +102,7 @@ Cette fonctionnalité vous permet de créer une tache à exécuter et de la vali
 <table>
     <thead>
         <tr>
-            <th align="center" col=2>###5.	Learning French</th>
+            <th align="center" col=2>5.	Learning French</th>
         </tr>
     </thead>
     <tbody>
@@ -117,7 +119,7 @@ Cette fonctionnalité vous permet d’apprendre les mots clés et les phrases co
 <table>
     <thead>
         <tr>
-            <th align="center" col=2>###6.	Map</th>
+            <th align="center" col=2>6.	Map</th>
         </tr>
     </thead>
     <tbody>
@@ -134,7 +136,7 @@ Cette fonctionnalité vous permet de mieux vous diriger dans l’enceinte de l�
 <table>
     <thead>
         <tr>
-            <th align="center" col=2>###7.	Send</th>
+            <th align="center" col=2>7.	Send</th>
         </tr>
     </thead>
     <tbody>
