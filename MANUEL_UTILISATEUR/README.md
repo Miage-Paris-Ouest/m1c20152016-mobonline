@@ -31,7 +31,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 			&nbsp*	Votre user</br>
 			&nbsp*	Votre mot de passe</br>
 			</td>
-            <td align="center" width="50%"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase/AdminUseCase.png"></td>
+            <td align="center" width="50%"><img src="">https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/login.png</td>
         </tr>
     </tbody>
 </table>
@@ -56,7 +56,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 
 			Ainsi qu’au menu latéral permettant de se diriger directement vers ces fonctionnalités</br>
 			</td>
-            <td align="center"></td>
+            <td align="center"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/accueil.png"></td>
         </tr>
     </tbody>
 </table>
@@ -73,7 +73,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 
 			Cette fonctionnalité vous permet de sélectionner une catégorie spéciale vous redirigeant vers les page d’information liée à celle-ci.
 			</td>
-            <td align="center"></td>
+            <td align="center"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/how%20to.png"></td>
         </tr>
     </tbody>
 </table>
@@ -90,7 +90,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 			Après un clic sur la page d’accueil ou sur le menu latéral vous avez accès à la fonctionnalité To Do List.</br></br>
 			Cette fonctionnalité vous permet de créer une tache à exécuter et de la valider et préciser une date.
 			</td>
-            <td align="center"></td>
+            <td align="center"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/to%20do%20list.png"></td>
         </tr>
     </tbody>
 </table>
@@ -107,7 +107,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 			Après un clic sur la page d’accueil ou sur le menu latéral vous avez accès à la fonctionnalité Learning French.</br></br>
 			Cette fonctionnalité vous permet d’apprendre les mots clés et les phrases communément utilisé en France avec la traduction dans votre langue.
 			</td>
-            <td align="center"></td>
+            <td align="center"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/learning%20french.png"></td>
         </tr>
     </tbody>
 </table>
@@ -124,7 +124,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 			Après un clic sur la page d’accueil ou sur le menu Map.</br></br>
 			Cette fonctionnalité vous permet de mieux vous diriger dans l’enceinte de l’université.
 			</td>
-            <td align="center"></td>
+            <td align="center"><img src=""></td>
         </tr>
     </tbody>
 </table>
@@ -143,7 +143,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 
 			Le contact s’effectue via mail, veuillez activer vos données mobile, ou vous connecter à un réseau WIFI connecté à internet.
 			</td>
-            <td align="center"></td>
+            <td align="center"><img src=""></td>
         </tr>
     </tbody>
 </table>
