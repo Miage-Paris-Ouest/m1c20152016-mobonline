@@ -31,7 +31,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 			&nbsp*	Votre user</br>
 			&nbsp*	Votre mot de passe</br>
 			</td>
-            <td align="center" width="50%"><img src="">https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/login.png</td>
+            <td align="center" width="50%"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/login.png"></td>
         </tr>
     </tbody>
 </table>
@@ -56,7 +56,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 
 			Ainsi qu’au menu latéral permettant de se diriger directement vers ces fonctionnalités</br>
 			</td>
-            <td align="center"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/accueil.png"></td>
+            <td align="center"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/accueil.png"></br></br><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/man1.png"></td>
         </tr>
     </tbody>
 </table>
@@ -124,7 +124,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 			Après un clic sur la page d’accueil ou sur le menu Map.</br></br>
 			Cette fonctionnalité vous permet de mieux vous diriger dans l’enceinte de l’université.
 			</td>
-            <td align="center"><img src=""></td>
+            <td align="center"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/map.png"></td>
         </tr>
     </tbody>
 </table>
@@ -143,7 +143,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 
 			Le contact s’effectue via mail, veuillez activer vos données mobile, ou vous connecter à un réseau WIFI connecté à internet.
 			</td>
-            <td align="center"><img src=""></td>
+            <td align="center"><img src="https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/PROTOTYPE/img/mail.png"></td>
         </tr>
     </tbody>
 </table>
