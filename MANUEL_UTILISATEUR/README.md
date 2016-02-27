@@ -31,7 +31,7 @@ Les identifiants de l’application sont distribué par le service erasmus de l�
 			&nbsp*	Votre user</br>
 			&nbsp*	Votre mot de passe</br>
 			</td>
-            <td align="center" width="50%"></td>
+            <td align="center" width="50%">[alt text](https://github.com/Miage-Paris-Ouest/m1c20152016-mobonline/blob/master/diagrams/UseCase/AdminUseCase.png "Use case")</td>
         </tr>
     </tbody>
 </table>
